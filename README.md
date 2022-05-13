@@ -1,4 +1,5 @@
-# **SAVE THE ______** ![IntroPic]( https://github.com/ahmadelbaba/savetheplanet/blob/798f6d8877437b69c68fbe998806e1250be0823f/images/hearthealth.png)
+   ![IntroPic]( https://github.com/ahmadelbaba/savetheplanet/blob/798f6d8877437b69c68fbe998806e1250be0823f/images/hearthealth.png)
+# **SAVE THE ______** 
 
 ## **SELECTED TOPIC**: **_ HEART DISEASE _**
 
