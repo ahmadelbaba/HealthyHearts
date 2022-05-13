@@ -64,10 +64,10 @@ The team has decided to use Slack as the forum for communication. A team group c
 PostgresSQL database will be used as the DataBase and will be hosted on Amazon's AWS' relational database service (RDS) . We require a large amount of data to be stored. AWS provides us the capacity to store large amounts of data with public access, making it a good fit for our purposes.
 
 **Data Cleaning and Analysis:**
-Python and Panda will be be used on Jupyter notebook to clean the data and perform further exploratory analysis. 
+Python and Pandas will be be used on Jupyter notebook to clean the data and perform further exploratory analysis. 
 
 **Machine Learning:**
-(TO BE ADDED)
+SciKitLearn is the ML library we'll be using to create a classifier. Plotly and hvPlot will be utilized to help visualize the outcomes. We will also be using Principal Component Analysis (PCA) for fetaure reduction. 
 
 **Dashboard:**
 We intend to use Tableau to visualise and display the data and build an interactive dashboard. 
@@ -97,7 +97,7 @@ The transformed data will be stored in a database. We have chosen AWS to store o
 
 While Supervised Machine Learning can help us predict outcomes based on the different factors in our data set, Unsupervised learning will help us uncover patterns in our data and determine clusters. By employing Unsupervised learning, we will atempt to find out whether certain clusters of individuals react to risk factors differently. This in trun can be used to further our Supervised learning model accuracy and ultimately taylor our advise and improve the health outcomes of our clustered population. 
 
-The team will use Scikit-learn library as well as Plotly and hvPlot to help visualize the outcomes. Panda will be used to pre-process teh data.  
+The team will use Scikit-learn library as well as Plotly and hvPlot to help visualize the outcomes. Pandas will be used to pre-process the data.  
 
 For our Unsupervised learning model will we start by importing data from our PostgresSQL database. The data will be verified for any null-values and duplicates. Furthermore we will ensure that all data is numeric. Data will be scaled where needed.
 
@@ -106,10 +106,6 @@ Following that, the team will generate and plot an Elbow Curve to determine how 
 Given that the number of features is high, the team will attempt feature-reduction and will use Principal Component Analysis (PCA). PCA is a statistical technique to speed up machine learning algorithms when the number of input features (or dimensions) is too high. PCA reduces the number of dimensions by transforming a large set of variables into a smaller one that contains most of the information in the original large set.
 
 Finally clusters will be generated again based on the outcome from PCA.
-
-Access the Machine Learning mockup through the link here: 
-
--	[ML link]()
 
 
 ## SOURCES:
