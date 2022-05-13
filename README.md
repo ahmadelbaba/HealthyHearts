@@ -48,7 +48,7 @@ The dataset consists of 18 variables. It includes the following variables:
 
 Through this data analysis project we hope to answer the following questions: 
 
-**_What social and/or biological factors impact the likelihood of a person getting a heart disease? _**
+**_What social and/or biological factors impact the likelihood of a person getting a heart disease?_**
 
 Through the project we aim to determine any correlations between individuals’ lifestyle or social choices and their heart health. As well, we aim to determine if any intrinsic or biological characteristics have any implications on an individual’s heart health. This is an important question with implications for public health and healthcare policies. 
 
