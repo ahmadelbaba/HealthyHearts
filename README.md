@@ -2,7 +2,7 @@
   <img width="200" src="https://github.com/ahmadelbaba/savetheplanet/blob/798f6d8877437b69c68fbe998806e1250be0823f/images/hearthealth.png" alt="Heart Disease Image">
 </p>
 
-<h1 align="center">SAVE THE PLANET</h1>
+<h1 align="center">Healthy Hearts</h1>
 
 ## **SELECTED TOPIC**: **_HEART DISEASE_**
 
@@ -56,15 +56,15 @@ Through the project we aim to determine any correlations between individuals’ 
 
 ## **DESCRIPTION OF THE COMMUNICATION PROTOCOLS**
 
-The team has decided to use Slack as the forum for communication. A team group chat is our main form of communication and space to exchange ideas and information. We have also availed Zoom to organize and host group meetings to brainstorm and workshop ideas and roles for the length of the project. 
+The team has decided to use Slack as the forum for communication. A team group chat is our main form of communication and space to exchange ideas and information. In Slack the team has created individual threads to discuss work progress on Data Analysis, Machine Learning and Visualiasation. We have also availed Zoom to organize and host group meetings to brainstorm and workshop ideas and roles for the length of the project. 
 
 ## **TECHNOLOGIES USED**
 
-**Data Cleaning and Analysis:**
-PostgreSQL will be used to clean the data. Exploratory and further analysis will be performed using pandas through jupyter notebook. 
+**Database and Storage:**
+PostgresSQL database will be used as the DataBase and will be hosted on Amazon's AWS' relational database service (RDS) . We require a large amount of data to be stored. AWS provides us the capacity to store large amounts of data with public access, making it a good fit for our purposes.
 
-**Database Storage:**
-AWS will be utilized to store the data. We require a large amount of data to be stored. AWS provides us the capacity to store large amounts of data with public access, making it a good fit for our purposes.
+**Data Cleaning and Analysis:**
+Python and Panda will be be used on Jupyter notebook to clean the data and perform further exploratory analysis. 
 
 **Machine Learning:**
 (TO BE ADDED)
@@ -74,7 +74,7 @@ We intend to use Tableau to visualise and display the data and build an interact
 
 ## **DATABASE MOCKUP**
 
-As mentioned previously, PostgreSQL will be used to clean the data. Exploratory and further analysis will be performed using pandas through jupyter notebook. 
+As mentioned previously, PostgreSQL will be used as the data and will be hosted on AWS. The database will include one table only with the variables mentioned above as columns. 
 
 ### ETL Process 
 
