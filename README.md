@@ -93,6 +93,15 @@ The transformed data will be stored in a database. We have chosen AWS to store o
 
 ## **MACHINE LEARNING MODEL MOCKUP** 
 
+### **Supervised Learning**
+
+In this case supervised Machine Learning is a great method in helping us predict heart disease outcomes solely based on numerous factors in our data set. The variables provided could influence the result of someone either having heart disease or not. It will also uncover any weaknesses and strengths in our data relative to our assessment by training and testing the model in different simulations. We will attempt to find out whether certain variables have a stronger effect on the outcome than others. But more specifically if the attributes you cannot control show any true accuracy in heart disease prediction.  
+
+The team will use Scikit-learn library for various different tools such as Logistic Regression and Random Forest Classifiers. As well as utilizing the imblearn library for Oversampling and Undersampling where needed.  
+
+For our model will we start by importing the data and converting it into a usable dataframe on Jupyter Notebook. The data will be cleaned and filtered removing any found null-values. For this step if there is a null-value in any column that row is then removed from the dataset.  
+
+Confusion matrices will help us undiscover the measured precision, accuracy, and sensitivity in our different simulations. This will be the main factor in determining the strength of certain variables in terms of the correct prediction of heart disease.  
 ### **Unsupervised Learning**
 
 While Supervised Machine Learning can help us predict outcomes based on the different factors in our data set, Unsupervised learning will help us uncover patterns in our data and determine clusters. By employing Unsupervised learning, we will atempt to find out whether certain clusters of individuals react to risk factors differently. This in trun can be used to further our Supervised learning model accuracy and ultimately taylor our advise and improve the health outcomes of our clustered population. 
