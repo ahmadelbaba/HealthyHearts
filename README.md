@@ -1,7 +1,8 @@
    ![IntroPic]( https://github.com/ahmadelbaba/savetheplanet/blob/798f6d8877437b69c68fbe998806e1250be0823f/images/hearthealth.png)
-# **SAVE THE ______** 
 
-## **SELECTED TOPIC**: **_ HEART DISEASE _**
+# **SAVE THE PLANET** 
+
+## **SELECTED TOPIC**: **_HEART DISEASE_**
 
 ## **SUMMARY OF THE PROPOSED PROJECT**
 
@@ -20,6 +21,7 @@ Through this analysis we wish to gain a better understanding of how heart diseas
 The source data comes from the 2020 annual CDC survey data of 400k adults related to their health status. The CDC is the Centers for Disease and Control Prevention which is a US national public health agency. This data has already been cleaned and is sourced through Kaggle in the format of a CV file for the purposes of this project. 
 
 The current dataset has been cleaned and transformed from nearly 300 variables to 18. The dataset is composed of mostly binary responses to indicate various health statuses. It also includes respondents’ demographic information including age, sex and race. 
+
 ### Variables
 
 The dataset consists of 18 variables. It includes the following variables: 
@@ -56,16 +58,16 @@ The team has decided to use Slack as the forum for communication. A team group c
 
 ## **TECHNOLOGIES USED**
 
-### Data Cleaning and Analysis
+**Data Cleaning and Analysis:**
 PostgreSQL will be used to clean the data. Exploratory and further analysis will be performed using pandas through jupyter notebook. 
 
-### Database Storage
+**Database Storage:**
 AWS will be utilized to store the data. We require a large amount of data to be stored. AWS provides us the capacity to store large amounts of data with public access, making it a good fit for our purposes.
 
-### Machine Learning
+**Machine Learning:**
 (TO BE ADDED)
 
-### Dashboard
+**Dashboard:**
 We intend to use Tableau to visualise and display the data and build an interactive dashboard. 
 
 ## **DATABASE MOCKUP**
@@ -74,15 +76,15 @@ As mentioned previously, PostgreSQL will be used to clean the data. Exploratory 
 
 ### ETL Process 
 
-**Extracting Data** 
+**Extracting Data:** 
 
 During data extraction, raw data is exported from source locations to a staging area. The current dataset is extracted from Kaggle, an open source, web-based data science environment.
 
-**Transforming Data** 
+**Transforming Data:** 
 
 The data will be staged in PostgreSQL, where it will undergo data processing. Here it will be consolidated for our analytical use case. This will include re-encoding dichotomous responses to numeric binary values, cleaning out null values, summarizing based on raw data, and formatting the data into tables or data frames. 
 
-**Loading Data**
+**Loading Data:**
 
 The transformed data will be stored in a database. We have chosen AWS to store our data. 
 
@@ -95,7 +97,7 @@ Access the Machine Learning mockup through the link here:
 
 
 ## SOURCES:
--	[Dataset](https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease)
--	[CDC](https://www.cdc.gov/brfss/questionnaires/index.htm)
--	[Pic](https://www.worldkidneyday.org/facts/topics/cardiovascular-disease/)
+-	https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease
+-	https://www.cdc.gov/brfss/questionnaires/index.ht
+-	https://www.worldkidneyday.org/facts/topics/cardiovascular-disease/
 
