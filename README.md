@@ -20,7 +20,7 @@ Through this analysis we wish to gain a better understanding of how heart diseas
 
 ## **DESCRIPTON OF THE SOURCE DATA** 
 
-The source data comes from the 2020 annual CDC survey data of 400k adults related to their health status. The CDC is the Centers for Disease and Control Prevention which is a US national public health agency. This data has already been cleaned and is sourced through Kaggle in the format of a CV file for the purposes of this project. 
+The source data comes from the 2020 annual CDC survey data of 400k adults related to their health status. The CDC is the Centers for Disease and Control Prevention which is a US national public health agency. This data has already been cleaned and is sourced through Kaggle in the format of a CSV file for the purposes of this project. 
 
 The current dataset has been cleaned and transformed from nearly 300 variables to 18. The dataset is composed of mostly binary responses to indicate various health statuses. It also includes respondents’ demographic information including age, sex and race. 
 
@@ -56,7 +56,7 @@ Through the project we aim to determine any correlations between individuals’ 
 
 ## **DESCRIPTION OF THE COMMUNICATION PROTOCOLS**
 
-The team has decided to use Slack as the forum for communication. A team group chat is our main form of communication and space to exchange ideas and information. In Slack the team has created individual threads to discuss work progress on Data Analysis, Machine Learning and Visualiasation. We have also availed Zoom to organize and host group meetings to brainstorm and workshop ideas and roles for the length of the project. 
+The team has decided to use Slack as the forum for communication. A team group chat is our main form of communication and space to exchange ideas and information. In Slack the team has created individual threads to discuss work progress on Data Analysis, Machine Learning and Visualisation. We have also availed Zoom to organize and host group meetings to brainstorm and workshop ideas and roles for the length of the project. 
 
 ## **TECHNOLOGIES USED**
 
