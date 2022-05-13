@@ -1,6 +1,8 @@
-   ![IntroPic]( https://github.com/ahmadelbaba/savetheplanet/blob/798f6d8877437b69c68fbe998806e1250be0823f/images/hearthealth.png)
+<p align="center">
+  <img width="200" src="https://github.com/ahmadelbaba/savetheplanet/blob/798f6d8877437b69c68fbe998806e1250be0823f/images/hearthealth.png" alt="Heart Disease Image">
+</p>
 
-# **SAVE THE PLANET** 
+<h1 align="center">SAVE THE PLANET</h1>
 
 ## **SELECTED TOPIC**: **_HEART DISEASE_**
 
@@ -44,9 +46,9 @@ The dataset consists of 18 variables. It includes the following variables:
 17.	KidneyDisease – (Yes/No) – Not including kidney stones, bladder infection or incontinence, were you ever told you had kidney disease?
 18.	SkinCancer – (Yes/No) – Have you had or do you have skin cancer?
 
-## **QUESTIONS TO BE ANSWERED** 
+## **QUESTION TO BE ANSWERED** 
 
-Through this data analysis project we hope to answer the following questions: 
+Through this data analysis project we hope to answer the following question: 
 
 **_What social and/or biological factors impact the likelihood of a person getting a heart disease?_**
 
