@@ -24,6 +24,10 @@ The source data comes from the 2020 annual CDC survey data of 400k adults relate
 
 The current dataset has been cleaned and transformed from nearly 300 variables to 18. The dataset is composed of mostly binary responses to indicate various health statuses. It also includes respondents’ demographic information including age, sex and race. 
 
+### ERD
+
+As we have just one fairly clean data set we are not creating an ERD. All the variables are in the same table.
+
 ### Variables
 
 The dataset consists of 18 variables. The following table displays a short data dictionary for the chosen dataset, with the varaible names, description and response encoding.  
