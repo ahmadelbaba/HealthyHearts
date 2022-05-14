@@ -26,25 +26,28 @@ The current dataset has been cleaned and transformed from nearly 300 variables t
 
 ### Variables
 
-The dataset consists of 18 variables. It includes the following variables: 
-1.	HeartDisease – (Yes/No) – Respondents that have ever reported having coronary heart disease (CHD) or myocardial infarction (MI)
-2.	BMI – Body Mass Index
-3.	Smoking – (Yes/No) – Have you smoked at least 100 cigarettes in your entire life? [Note: 5 packs = 100 cigarettes]
-4.	AlcoholDrinking – (Yes/No) – Heavy drinkers (adult men having more than 14 rinks per week and adult women having more than 7 drinks per week) 
-5.	Stroke – (Yes/No) – Have you ever had a stroke?
-6.	PhysicalHealth – Now thinking about your physical health, which includes physical illness and injury, for how many days during the past 30 days was your physical health not good? (0-30 days)
-7.	MentalHealth	- Thinking about your mental health, for how many days during the past 30 days was your mental health not good? (0-30 days)
-8.	DiffWalking – (Yes/No) –  Do you have serious difficulty walking or climbing stairs?
-9.	Sex – Are you male or female?
-10.	AgeCategory – 14-level age category (5-year increments starting from age 18–24 to 80 or older) 
-11.	Race – Imputed race/ethnic value 
-12.	Diabetic – (Yes/No) – Do you have diabetes?
-13.	PhysicalActivity – (Yes/No) – Adults who reported doing physical activity or exercise during the past 30 days other than their regular job
-14.	GenHealth – Would you say that in general your health is... (Likert scale)
-15.	SleepTime – On average, how many hours of sleep do you get in a 24-hour period?
-16.	Asthma – (Yes/No) – Do you have asthma?
-17.	KidneyDisease – (Yes/No) – Not including kidney stones, bladder infection or incontinence, were you ever told you had kidney disease?
-18.	SkinCancer – (Yes/No) – Have you had or do you have skin cancer?
+The dataset consists of 18 variables. The following table displays a short data dictionary for the chosen dataset, with the varaible names, description and response encoding.  
+
+| Variable Name |	Description |	Response Coding |
+| ------------- | ------------- | ------------- |
+| HeartDisease |	Respondents that have ever reported having coronary heart disease (CHD) or myocardial infarction (MI) |	Yes/No |
+| BMI |	Body Mass Index |	Numeric Value	|
+| Smoking |	Have you smoked at least 100 cigarettes in your entire life? [Note: 5 packs = 100 cigarettes]	| Yes/No	|
+| AlcoholDrinking	| Heavy drinkers (adult men having more than 14 rinks per week and adult women having more than 7 drinks per week) |	Yes/No |
+| Stroke	| Have you ever had a stroke?	| Yes/No	|
+| PhysicalHealth |	Now thinking about your physical health, which includes physical illness and injury, for how many days during the past 30 days was your physical health not good? (0-30 days) |	0 - 30 days |
+MentalHealth	| Thinking about your mental health, for how many days during the past 30 days was your mental health not good? (0-30 days)	| 0 - 30 days |
+| DiffWalking	| Do you have serious difficulty walking or climbing stairs? |	Yes/No	|
+| Sex	| Are you male or female? |	Male/Female |
+| AgeCategory	| 14-level age category (5-year increments starting from age 18–24 to 80 or older) | Age category	|
+| Race	| Imputed race/ethnic value |	Race/Ethnicity | 
+| Diabetic	| Do you have diabetes?	| Yes/No |
+| PhysicalActivity	| Adults who reported doing physical activity or exercise during the past 30 days other than their regular job |	Yes/No |
+| GenHealth	| Would you say that in general your health is... | Likert scale |
+| SleepTime	| On average, how many hours of sleep do you get in a 24-hour period?	| 0 - 24 hours |
+| Asthma	| Do you have asthma?	| Yes/No	|
+| KidneyDisease |	Not including kidney stones, bladder infection or incontinence, were you ever told you had kidney disease?	| Yes/No	|
+| SkinCancer | Have you had or do you have skin cancer? |	Yes/No |
 
 ## **QUESTION TO BE ANSWERED** 
 
@@ -61,10 +64,10 @@ The team has decided to use Slack as the forum for communication. A team group c
 ## **TECHNOLOGIES USED**
 
 **Database and Storage:**
-PostgresSQL database will be used as the DataBase and will be hosted on Amazon's AWS' relational database service (RDS) . We require a large amount of data to be stored. AWS provides us the capacity to store large amounts of data with public access, making it a good fit for our purposes.
+PostgresSQL database will be used as the DataBase to manage the large dataset in its entirety, and will be hosted on Amazon's AWS' relational database service (RDS) . We require a large amount of data to be stored. AWS provides us the capacity to store large amounts of data with public access, making it a good fit for our purposes.
 
 **Data Cleaning and Analysis:**
-Python and Pandas will be be used on Jupyter notebook to clean the data and perform further exploratory analysis. 
+Python and Pandas will be be used on Jupyter Notebook to clean the data and perform further exploratory analysis. 
 
 **Machine Learning:**
 SciKitLearn is the ML library we'll be using to create a classifier. Plotly and hvPlot will be utilized to help visualize the outcomes. We will also be using Principal Component Analysis (PCA) for fetaure reduction. 
@@ -75,6 +78,8 @@ We intend to use Tableau to visualise and display the data and build an interact
 ## **DATABASE MOCKUP**
 
 As mentioned previously, PostgreSQL will be used as the data and will be hosted on AWS. The database will include one table only with the variables mentioned above as columns. 
+
+Click the link here to view the chosen data set: [Healthy Hearts Data Summary]()
 
 ### ETL Process 
 
