@@ -31,27 +31,26 @@ As we have just one fairly clean data set we are not creating an ERD. All the va
 ### Variables
 
 The dataset consists of 18 variables. The following table displays a short data dictionary for the chosen dataset, with the varaible names, description and response encoding.  
-
-| Variable Name |	Description |	Response Coding |
+| Variable Name | Description | Type |
 | ------------- | ------------- | ------------- |
-| HeartDisease |	Respondents that have ever reported having coronary heart disease (CHD) or myocardial infarction (MI) |	Yes/No |
-| BMI |	Body Mass Index |	Numeric Value	|
-| Smoking |	Have you smoked at least 100 cigarettes in your entire life? [Note: 5 packs = 100 cigarettes]	| Yes/No	|
-| AlcoholDrinking	| Heavy drinkers (adult men having more than 14 rinks per week and adult women having more than 7 drinks per week) |	Yes/No |
-| Stroke	| Have you ever had a stroke?	| Yes/No	|
-| PhysicalHealth |	Now thinking about your physical health, which includes physical illness and injury, for how many days during the past 30 days was your physical health not good? (0-30 days) |	0 - 30 days |
-MentalHealth	| Thinking about your mental health, for how many days during the past 30 days was your mental health not good? (0-30 days)	| 0 - 30 days |
-| DiffWalking	| Do you have serious difficulty walking or climbing stairs? |	Yes/No	|
-| Sex	| Are you male or female? |	Male/Female |
-| AgeCategory	| 14-level age category (5-year increments starting from age 18–24 to 80 or older) | Age category	|
-| Race	| Imputed race/ethnic value |	Race/Ethnicity | 
-| Diabetic	| Do you have diabetes?	| Yes/No |
-| PhysicalActivity	| Adults who reported doing physical activity or exercise during the past 30 days other than their regular job |	Yes/No |
-| GenHealth	| Would you say that in general your health is... | Likert scale |
-| SleepTime	| On average, how many hours of sleep do you get in a 24-hour period?	| 0 - 24 hours |
-| Asthma	| Do you have asthma?	| Yes/No	|
-| KidneyDisease |	Not including kidney stones, bladder infection or incontinence, were you ever told you had kidney disease?	| Yes/No	|
-| SkinCancer | Have you had or do you have skin cancer? |	Yes/No |
+| HeartDisease | Value indicating if Respondents ever reported having coronary heart disease (CHD) or myocardial infarction (MI) Yes (1) No (0) | Categorical |
+| BMI | Body Mass Index | Float |
+| Smoking | Value indicating if respondents smoked at least 100 cigarettes in their entire life  Yes (1) No (0) | Categorical |
+| AlcoholDrinking | Value indicating if the reponsder is heavy drinker (adult men having more than 14 rinks per week and adult women having more than 7 drinks per week) Yes (1) No (0) | Categorical |
+| Stroke | Value indicating if respondent ever had a stroke? Yes (1) No (0) | Categorical |
+| PhysicalHealth | Value indicating the number of days that respondents experienced physical illness and/or injury(0-30 days) | Integer |
+MentalHealth | The number of days that mental health was not good (0-30 days) | Integer |
+| DiffWalking | Value indicating if respondets had serious difficulty walking or climbing stairs Yes (1) No (0) | Categorical |
+| Sex | Male (1) Female (0) | Categorical |
+| AgeCategory | 14-level age category (5-year increments starting from age 18–24 to 80 or older) | Categorical |
+| Race | Imputed race/ethnic value | Categorical |
+| Diabetic | Value indicating if diabetic Yes (1) No (0) | Categorical |
+| PhysicalActivity | Adults who reported doing physical activity or exercise during the past 30 days other than their regular job Yes (1) No (0) | Categorical |
+| GenHealth | Would you say that in general your health is... | Categorical |
+| SleepTime | The number of hours that they sleep in a 24-hour period? 0 - 24 hours | Float |
+| Asthma | Do you have asthma? Yes (1) No (0) | Categorical |
+| KidneyDisease | Not including kidney stones, bladder infection or incontinence, were you ever told you had kidney disease? Yes (1) No (0) | Categorical |
+| SkinCancer | Have you had or do you have skin cancer? Yes (1) No (0) | Categorical |
 
 ## **QUESTION TO BE ANSWERED** 
 
