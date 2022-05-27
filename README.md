@@ -141,10 +141,11 @@ Finally clusters will be generated again based on the outcome from PCA.
     - Used K-means model to fit data and predict clusters
     - USed an elbow curve and concluded that 4 clusters is the optimal number 
     - Plotted the clusters in a 3d graph
+    - Finally we did a silhouette score and our model score 0.49 on a scale of -1 to +1
     
 4. Exporting Results:
     - Saved clusters in 4 different Data Frames
-    - Exported resulting data and classes into a new CSV
+    - Exported resulting data and classes into a new CSV (ClusteredData.csv)
 
 ## SOURCES:
 -	https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease
