@@ -124,6 +124,27 @@ Given that the number of features is high, the team will attempt feature-reducti
 
 Finally clusters will be generated again based on the outcome from PCA.
 
+#### **CODE SUMMARY:**
+
+1.  Preprocessing:
+    - Replaced "Yes" with 1 and "No" with 0
+    - Used sklearn LabelEncoder to encode "Sex" "AgeCategory" and "GenHealth" fields
+    - Set object datatypes to string datatype
+    - Filtered out responders without Heart Disease and saved results in a new DataFrame
+    - Used get_dummies ton "the Diabetic" field
+    - Scaled data using StandardScaler fit_transform function
+
+2. Data Reduction:
+    - Used a PCA model to reduce dimensions to 3 principal components
+
+3. Determing Clusters:
+    - Used K-means model to fit data and predict clusters
+    - USed an elbow curve and concluded that 4 clusters is the optimal number 
+    - Plotted the clusters in a 3d graph
+    
+4. Exporting Results:
+    - Saved clusters in 4 different Data Frames
+    - Exported resulting data and classes into a new CSV
 
 ## SOURCES:
 -	https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease
