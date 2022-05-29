@@ -10,6 +10,8 @@
 
 The purpose of this project is to provide an overview of rising cases of heart disease. In doing so, heart disease dataset particularly relating to pre-existing medical conditions, lifestyle choices (ex. smoking or alcohol consumption), sex, race and age will be considered to consolidate, analyze and visualize heart disease health risk. The resulting model will also help predict likelihood of occurrence of heart disease based on external or internal factors. Lastly, the final report will recommend possible steps to improve heart health having determined which factors are most likely to predispose someone to heart disease. 
 
+## **PRESENTATION: [Google Slides Link](https://docs.google.com/presentation/d/1A6P2aHawny2O1kOplLJaj7GUaQW0srl-75VOKAXSWEQ/edit?usp=sharing)**
+
 ## **REASONING FOR CHOOSING HEART DISEASE**
 
 Heart disease is a major health concern and one of the leading causes of death for people across the globe. Heart diseases are amongst the most serious medical conditions. Simultaneously, heart disease is also one of the few serious medical conditions which are preventable by healthy lifestyle choices. People can individually learn to identify and manage heart disease risk factors, such as heart-healthy eating, regular exercise, and seeing a doctor to measure blood pressure, cholesterol, and weight. 
@@ -29,6 +31,8 @@ The current dataset has been cleaned and transformed from nearly 300 variables t
 Two tables have been created out of the source data; one for demographics informaiton and the other for all health or related issues. The two tables are linked by an 'ID' column as the primary key. 
 
 Click the link here to view the SQL code for Data Tables: [Healthy Hearts SQL Tables](https://github.com/ahmadelbaba/HealthyHearts/blob/7f4b78270c92e0aa2f0d3837c002675a5d7c2a18/Helthy_Hearts%20-%20updated.sql)
+
+ERD IMAGE OR FILE???
 
 ### Variables
 
@@ -133,7 +137,7 @@ During data extraction, raw data is exported from source locations to a staging 
 
 **Transforming Data:** 
 
-The data is staged in PostgreSQL, where it undrwent data processing. Here it was consolidated for our analytical use case. This included re-encoding dichotomous responses to numeric binary values, cleaning out null values, summarizing based on raw data, and formatting the data into tables or data frames. Two tables were created out of the source data, categorized as demogrpahics and health tables. Moreover an 'ID' colmn was added to the table for primary key purposes to link the two separated tables. 
+The data is staged in PostgreSQL, where it undrwent data processing. Pandas and Matplotlib were used on jupyter notebook (Python) to consolidate the data for our analytical use case. This included re-encoding dichotomous responses to numeric binary values, cleaning out null values, summarizing based on raw data, and formatting the data into tables or data frames. Two tables were created out of the source data, categorized as demogrpahics and health tables. Moreover an 'ID' colmn was added to the table for primary key purposes to link the two separated tables. 
 
 **Loading Data:**
 
@@ -151,6 +155,9 @@ The team will use Scikit-learn library for various different tools such as Logis
 For our model will we start by importing the data and converting it into a usable dataframe on Jupyter Notebook. The data will be cleaned and filtered removing any found null-values. For this step if there is a null-value in any column that row is then removed from the dataset.  
 
 Confusion matrices will help us undiscover the measured precision, accuracy, and sensitivity in our different simulations. This will be the main factor in determining the strength of certain variables in terms of the correct prediction of heart disease.  
+
+Access Surpervised ML code here: [Healthy Hearts Supervised ML](https://github.com/ahmadelbaba/HealthyHearts/blob/fabdc6fab35930223679ae2af621a7e816f866ab/03_Supervised_ML.ipynb)
+
 ### **Unsupervised Learning**
 
 While Supervised Machine Learning can help us predict outcomes based on the different factors in our data set, Unsupervised learning will help us uncover patterns in our data and determine clusters. By employing Unsupervised learning, we will atempt to find out whether certain clusters of individuals react to risk factors differently. This in trun can be used to further our Supervised learning model accuracy and ultimately taylor our advise and improve the health outcomes of our clustered population. 
@@ -165,13 +172,15 @@ Given that the number of features is high, the team will attempt feature-reducti
 
 Finally clusters will be generated again based on the outcome from PCA.
 
-#### **CODE SUMMARY:**
+#### **Code Summary:**
+
+Access Unsurpervised ML code here: [Healthy Hearts Unsupervised ML](https://github.com/ahmadelbaba/HealthyHearts/blob/fabdc6fab35930223679ae2af621a7e816f866ab/02_Unsupervised_ML.ipynb)
 
 1.  Preprocessing:
-    - Replaced "Yes" with 1 and "No" with 0
+    - Re-encoded "Yes" and "No" with 1's and 0's
     - Used sklearn LabelEncoder to encode "Sex" "AgeCategory" and "GenHealth" fields
     - Set object datatypes to string datatype
-    - Filtered out responders without Heart Disease and saved results in a new DataFrame
+    - Filtered out respondents without Heart Disease and saved results in a new DataFrame
     - Used get_dummies ton "the Diabetic" field
     - Scaled data using StandardScaler fit_transform function
 
@@ -180,12 +189,12 @@ Finally clusters will be generated again based on the outcome from PCA.
 
 3. Determing Clusters:
     - Used K-means model to fit data and predict clusters
-    - USed an elbow curve and concluded that 4 clusters is the optimal number 
-    - Plotted the clusters in a 3d graph
-    - Finally we did a silhouette score and our model score 0.49 on a scale of -1 to +1
+    - Used an elbow curve and concluded that four clusters is the optimal number 
+    - Plotted the clusters in a 3D graph
+    - Finally generated a silhouette score and our model score 0.49 on a scale of -1 to +1
     
 4. Exporting Results:
-    - Saved clusters in 4 different Data Frames
+    - Saved clusters in four different Data Frames
     - Exported resulting data and classes into a new CSV (ClusteredData.csv)
 
 ## SOURCES:
