@@ -33,6 +33,7 @@ Two tables have been created out of the source data; one for demographics inform
 Click the link here to view the SQL code for Data Tables: [Healthy Hearts SQL Tables](https://github.com/ahmadelbaba/HealthyHearts/blob/7f4b78270c92e0aa2f0d3837c002675a5d7c2a18/Helthy_Hearts%20-%20updated.sql)
 
 ERD IMAGE OR FILE???
+Click the link here to view the ERD: [Healthy Hearts ERD]()
 
 ### Variables
 
@@ -84,9 +85,26 @@ SciKitLearn is the ML library we'll be using to create a classifier. Plotly and 
 **Dashboard:**
 We intend to use Tableau to visualise and display the data and build an interactive dashboard. 
 
-## **DATA EXPLORATION & DATABASE**
+## **DATABASE**
+
+### ETL Process 
+
+**Extracting Data:** 
+
+During data extraction, raw data is exported from source locations to a staging area. The current dataset is extracted from Kaggle, an open source, web-based data science environment.
+
+**Transforming Data:** 
+
+The data is staged in PostgreSQL, where it undrwent data processing. Pandas and Matplotlib were used on jupyter notebook (Python) to consolidate the data for our analytical use case. This included re-encoding dichotomous responses to numeric binary values, cleaning out null values, summarizing based on raw data, and formatting the data into tables or data frames. Two tables were created out of the source data, categorized as demogrpahics and health tables. Moreover an 'ID' colmn was added to the table for primary key purposes to link the two separated tables. 
+
+**Loading Data:**
+
+The transformed data will be stored in a database. We have chosen AWS to store our data. 
+
 ### DATABASE 
 As mentioned previously, PostgreSQL was used as the data and hosted on AWS. 
+
+## **DATA EXPLORATION: VISUALIZATIONS & DASHBOARD**
 
 ### DATA EXPLORATION
 Click the link here to view the chosen data set: [Healthy Hearts Data Cleaning & Exploration](https://github.com/ahmadelbaba/HealthyHearts/blob/7f4b78270c92e0aa2f0d3837c002675a5d7c2a18/01_DataCleaingExploration.ipynb)
@@ -128,23 +146,14 @@ During the Data exploration phase, the following was concluded:
 
 Click the link here to view the data exploration visualizations and further analysis: [Healthy Hearts Data Visualizations and Analysis](https://public.tableau.com/views/HealthyHearts/HeartDisease?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link)
 
+Further visualizations were created on Tableau. Tableau was also used for hosting analysis (in stories). 
 
-### ETL Process 
+### Dashboard 
 
-**Extracting Data:** 
-
-During data extraction, raw data is exported from source locations to a staging area. The current dataset is extracted from Kaggle, an open source, web-based data science environment.
-
-**Transforming Data:** 
-
-The data is staged in PostgreSQL, where it undrwent data processing. Pandas and Matplotlib were used on jupyter notebook (Python) to consolidate the data for our analytical use case. This included re-encoding dichotomous responses to numeric binary values, cleaning out null values, summarizing based on raw data, and formatting the data into tables or data frames. Two tables were created out of the source data, categorized as demogrpahics and health tables. Moreover an 'ID' colmn was added to the table for primary key purposes to link the two separated tables. 
-
-**Loading Data:**
-
-The transformed data will be stored in a database. We have chosen AWS to store our data. 
+A Dashboard will be created in Tableau. A storyboard for the dashboard has been presented in the google slides presentation. The Dashboard will be segregated into four categories: Demographic information, Health Status, Other Diseases and Lifestyle Choices. The Dashbaord will present how these four categories impact Heart Disease. There will be filters embedded in the Dashboard for ease of navigation to visually showcase and deterine the impact of the four categories on Heart Disease. Moreover, Tableau allows for interactive data visualization by "hover-over" information boxes which will further help provide clarification and support data analysis. 
 
 
-## **MACHINE LEARNING MODEL MOCKUP** 
+## **MACHINE LEARNING ANALYSIS**
 
 ### **Supervised Learning**
 
