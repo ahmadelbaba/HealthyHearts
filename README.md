@@ -175,6 +175,12 @@ For our model will we start by importing the data and converting it into a usabl
 
 Confusion matrices will help us undiscover the measured precision, accuracy, and sensitivity in our different simulations. This will be the main factor in determining the strength of certain variables in terms of the correct prediction of heart disease.  
 
+In order to use this dataset with our supervised model we needed to go about various steps of preprocessing. First we needed to remove the index column from the dataset because this parameter is not useful in our model. Next we needed to convert all the “Yes” values to 1s and “No” values to 0, except for the Yes and Nos in the “Diabetes” column simply because there is more benefit in separating that column into the 4 sections of “Yes”, “No”, “Yes -(during pregnancy), and “No - borderline diabetes”. Once this step is complete we need to encode the non numerical parameters to create different categories that read a numerical value for the model to interpret. And finally we use the new table created to combine with the original dataset while dropping the original columns of those encoded parameters. This gives us a new data frame that will be compatible with our model.
+
+In order to test the different features we must remove specific parameters to uncover any strengths and weaknesses of a group of features. To help choose which features we will test and how, we will calculate the feature importance  measurements to determine which parameters may have a stronger effect on the predictions of our model. The correlation matrix will help determine which parameters tend to have a strong relationship in where they effect each other to some degree. The correlation matrix will help decide whether certain features should consistently be grouped together or not.
+
+The model of Logistic Regression will be used for this test because of the nature of our prediction. We are aiming to ultimately predict whether a certain set of features can successfully uncover whether someone has heart disease or not. Logistic Regression is the perfect model for this test. Oversampling will be used over a Random Forest Classifier because when tested for accuracy with the original dataset the method of Oversampling showed a larger return in accuracy.
+
 Access Surpervised ML code here: [Healthy Hearts Supervised ML](https://github.com/ahmadelbaba/HealthyHearts/blob/fabdc6fab35930223679ae2af621a7e816f866ab/03_Supervised_ML.ipynb)
 
 ### **Unsupervised Learning**
