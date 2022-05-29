@@ -84,7 +84,12 @@ SciKitLearn is the ML library we'll be using to create a classifier. Plotly and 
 **Dashboard:**
 We intend to use Tableau to visualise and display the data and build an interactive dashboard. 
 
+
 ## **DATABASE**
+
+PostgreSQL will be used as the data and will be hosted on AWS. The database will include one table only with the variables mentioned above as columns. 
+
+Click the link here to view the chosen data set summary, cleaning and initial exploratory analysis: [Healthy Hearts Data Summary](https://github.com/ahmadelbaba/HealthyHearts/blob/3a0a2f94c18134cf9dee42f743de41ecf0d15ad1/HealthyHeartsDataSummary.ipynb)
 
 ### ETL Process 
 
