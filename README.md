@@ -10,6 +10,8 @@
 
 The purpose of this project is to provide an overview of rising cases of heart disease. In doing so, heart disease dataset particularly relating to pre-existing medical conditions, lifestyle choices (ex. smoking or alcohol consumption), sex, race and age will be considered to consolidate, analyze and visualize heart disease health risk. The resulting model will also help predict likelihood of occurrence of heart disease based on external or internal factors. Lastly, the final report will recommend possible steps to improve heart health having determined which factors are most likely to predispose someone to heart disease. 
 
+## **PRESENTATION: [Google Slides Link](https://docs.google.com/presentation/d/1A6P2aHawny2O1kOplLJaj7GUaQW0srl-75VOKAXSWEQ/edit?usp=sharing)**
+
 ## **REASONING FOR CHOOSING HEART DISEASE**
 
 Heart disease is a major health concern and one of the leading causes of death for people across the globe. Heart diseases are amongst the most serious medical conditions. Simultaneously, heart disease is also one of the few serious medical conditions which are preventable by healthy lifestyle choices. People can individually learn to identify and manage heart disease risk factors, such as heart-healthy eating, regular exercise, and seeing a doctor to measure blood pressure, cholesterol, and weight. 
@@ -26,7 +28,11 @@ The current dataset has been cleaned and transformed from nearly 300 variables t
 
 ### ERD
 
-As we have just one fairly clean data set we are not creating an ERD. All the variables are in the same table.
+Two tables have been created out of the source data; one for demographics informaiton and the other for all health or related issues. The two tables are linked by an 'ID' column as the primary key. 
+
+Click the link here to view the SQL code for Data Tables: [Healthy Hearts SQL Tables](https://github.com/ahmadelbaba/HealthyHearts/blob/7f4b78270c92e0aa2f0d3837c002675a5d7c2a18/Helthy_Hearts%20-%20updated.sql)
+
+Quickdbd was used to build an ERD. Click the link here to view the ERD: [Healthy Hearts ERD](https://github.com/ahmadelbaba/HealthyHearts/blob/9bb985fe3aac7351e005463f8fe052e833171386/images/Hearts.png)
 
 ### Variables
 
@@ -78,11 +84,7 @@ SciKitLearn is the ML library we'll be using to create a classifier. Plotly and 
 **Dashboard:**
 We intend to use Tableau to visualise and display the data and build an interactive dashboard. 
 
-## **DATABASE MOCKUP**
-
-As mentioned previously, PostgreSQL will be used as the data and will be hosted on AWS. The database will include one table only with the variables mentioned above as columns. 
-
-Click the link here to view the chosen data set summary, cleaning and initial exploratory analysis: [Healthy Hearts Data Summary](https://github.com/ahmadelbaba/HealthyHearts/blob/3a0a2f94c18134cf9dee42f743de41ecf0d15ad1/HealthyHeartsDataSummary.ipynb)
+## **DATABASE**
 
 ### ETL Process 
 
@@ -92,14 +94,71 @@ During data extraction, raw data is exported from source locations to a staging 
 
 **Transforming Data:** 
 
-The data will be staged in PostgreSQL, where it will undergo data processing. Here it will be consolidated for our analytical use case. This will include re-encoding dichotomous responses to numeric binary values, cleaning out null values, summarizing based on raw data, and formatting the data into tables or data frames. 
+The data is staged in PostgreSQL, where it undrwent data processing. Pandas and Matplotlib were used on jupyter notebook (Python) to consolidate the data for our analytical use case. This included re-encoding dichotomous responses to numeric binary values, cleaning out null values, summarizing based on raw data, and formatting the data into tables or data frames. Two tables were created out of the source data, categorized as demogrpahics and health tables. Moreover an 'ID' colmn was added to the table for primary key purposes to link the two separated tables. 
 
 **Loading Data:**
 
 The transformed data will be stored in a database. We have chosen AWS to store our data. 
 
+### DATABASE 
+As mentioned previously, PostgreSQL was used as the data and hosted on AWS. 
 
-## **MACHINE LEARNING MODEL MOCKUP** 
+## **DATA EXPLORATION: VISUALIZATIONS & DASHBOARD**
+
+### DATA EXPLORATION
+
+Initial exploration was conducted using Pandas and Matplotlib using jupyter notebook (Python). Individual variables were analyzed to determine the overall makeup of the dataset and understand average and majority responses. This helped indicate the nature of the dataset and the responses to then move onto deeper analysis conducted on Tableau and through Machine Learning, to determine any correlations. The analysis conducted through Tableau helped determine correlations between categories of demographics, other diseases, health status and lifestyle choices with visualizations. 
+
+Click the link here to view the chosen data set summary, cleaning and initial exploratory analysis: [Healthy Hearts Data Cleaning & Exploration](https://github.com/ahmadelbaba/HealthyHearts/blob/4267a7d77a5f84b8385c17128b74be5bb9e2e607/01_DataCleaningExploration.ipynb)
+
+The table below highlights the average and majority responses to the data surveryed. It depicts the characteristics of the average respondents. 
+
+| Variable Name | Average Response | Percentage |
+| ------------- | ------------- | ------------- |
+| HeartDisease | No | 91.44 % |
+| BMI | 28.33 | - |
+| Smoking | No | 58.75 % |
+| AlcoholDrinking | No | 93.19 % |
+| Stroke | No | 96.22 % |
+| PhysicalHealth | 0 days | 70.85 % |
+MentalHealth | 0 days | 64.22 % |
+| DiffWalking | No | 86.11 % |
+| Sex | Female | 52.54 % |
+| AgeCategory | 65 - 69 years | 10.68 % |
+| Race | White | 76.67 % |
+| Diabetic | No | 84.32 % |
+| PhysicalActivity | Yes | 77.53 % |
+| GenHealth | Very Good | 35.60 % |
+| SleepTime | 7 hours | 30.57 % |
+| Asthma | No | 86.28 % |
+| KidneyDisease | No | 96.31 % |
+| SkinCancer | No | 90.68 % |
+
+During the Data exploration phase, the following was concluded: 
+- Majority of the respondents are white and this is also the race that reported having the highest count for heart disease. This is a direct result of the makeup of the American populaiton which consists of majority white. 
+- Overall there are more female respondents than males. Males, particulary white males, have most frequently reported to having heart disease. 
+- Heart disease increases with age. Older (60+ years) populaitons reported having more heart disease than younger (under 60 years). 
+- Number of smokers is higher than non-smokers, particularly in older populations with heart disease. 
+- Respondents who reported having skin cancer more frequently also reported having heart disease than people who did not have skin cancer. 
+- Respondents who reported having diabetes more frequently also reported having heart disease than people who did not have diabetes. 
+- Respondents who reported having asthma more frequently also reported having heart disease than people who did not have asthma. 
+- Respondents who reported having kidney disease more frequently also reported having heart disease than people who did not have kidney disease. 
+- Respondents who reported being more physically active reported having no heart disease as compared to respondents who were not physically active.
+- Heart disease and stroke are not synonymous. However, respondents with heart disease had a higher likelihood of having a stroke.  
+- On average, younger populations reported better general health and minimal to no heart disease. 
+
+Click the link here to view the data exploration visualizations and further analysis: [Healthy Hearts Data Visualizations and Analysis](https://public.tableau.com/views/HealthyHearts/HeartDisease?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link)
+
+Further visualizations were created on Tableau. Tableau was also used for hosting analysis (in stories). 
+
+### Dashboard 
+
+A Dashboard will be created in Tableau. A storyboard for the dashboard has been presented in the google slides presentation. The Dashboard will be segregated into four categories: Demographic information, Health Status, Other Diseases and Lifestyle Choices. The Dashbaord will present how these four categories impact Heart Disease. There will be filters embedded in the Dashboard for ease of navigation to visually showcase and deterine the impact of the four categories on Heart Disease. Moreover, Tableau allows for interactive data visualization by "hover-over" information boxes which will further help provide clarification and support data analysis. 
+
+Access the Dashboard Layout here: [Healthy Hearts Dahsboard Layout](https://github.com/ahmadelbaba/HealthyHearts/blob/8a7cfab22dbecf357612307fbff45f93ee87e84b/images/DashboardLayout.png)
+
+
+## **MACHINE LEARNING ANALYSIS**
 
 ### **Supervised Learning**
 
@@ -110,9 +169,12 @@ The team will use Scikit-learn library for various different tools such as Logis
 For our model will we start by importing the data and converting it into a usable dataframe on Jupyter Notebook. The data will be cleaned and filtered removing any found null-values. For this step if there is a null-value in any column that row is then removed from the dataset.  
 
 Confusion matrices will help us undiscover the measured precision, accuracy, and sensitivity in our different simulations. This will be the main factor in determining the strength of certain variables in terms of the correct prediction of heart disease.  
+
+Access Surpervised ML code here: [Healthy Hearts Supervised ML](https://github.com/ahmadelbaba/HealthyHearts/blob/fabdc6fab35930223679ae2af621a7e816f866ab/03_Supervised_ML.ipynb)
+
 ### **Unsupervised Learning**
 
-While Supervised Machine Learning can help us predict outcomes based on the different factors in our data set, Unsupervised learning will help us uncover patterns in our data and determine clusters. By employing Unsupervised learning, we will atempt to find out whether certain clusters of individuals react to risk factors differently. This in trun can be used to further our Supervised learning model accuracy and ultimately taylor our advise and improve the health outcomes of our clustered population. 
+While Supervised Machine Learning can help us predict outcomes based on the different factors in our data set, Unsupervised learning will help us uncover patterns in our data and determine clusters. By employing Unsupervised learning, we will attempt to find out whether certain clusters of individuals react to risk factors differently. This in turn can be used to further our Supervised learning model accuracy and ultimately taylor our advice and improve the health outcomes of our clustered population. 
 
 The team will use Scikit-learn library as well as Plotly and hvPlot to help visualize the outcomes. Pandas will be used to pre-process the data.  
 
@@ -124,13 +186,15 @@ Given that the number of features is high, the team will attempt feature-reducti
 
 Finally clusters will be generated again based on the outcome from PCA.
 
-#### **CODE SUMMARY:**
+#### **Code Summary:**
+
+Access Unsurpervised ML code here: [Healthy Hearts Unsupervised ML](https://github.com/ahmadelbaba/HealthyHearts/blob/fabdc6fab35930223679ae2af621a7e816f866ab/02_Unsupervised_ML.ipynb)
 
 1.  Preprocessing:
-    - Replaced "Yes" with 1 and "No" with 0
+    - Re-encoded "Yes" and "No" with 1's and 0's
     - Used sklearn LabelEncoder to encode "Sex" "AgeCategory" and "GenHealth" fields
     - Set object datatypes to string datatype
-    - Filtered out responders without Heart Disease and saved results in a new DataFrame
+    - Filtered out respondents without Heart Disease and saved results in a new DataFrame
     - Used get_dummies ton "the Diabetic" field
     - Scaled data using StandardScaler fit_transform function
 
@@ -139,12 +203,12 @@ Finally clusters will be generated again based on the outcome from PCA.
 
 3. Determing Clusters:
     - Used K-means model to fit data and predict clusters
-    - USed an elbow curve and concluded that 4 clusters is the optimal number 
-    - Plotted the clusters in a 3d graph
-    - Finally we did a silhouette score and our model score 0.49 on a scale of -1 to +1
+    - Used an elbow curve and concluded that four clusters is the optimal number 
+    - Plotted the clusters in a 3D graph
+    - Finally generated a silhouette score and our model score 0.49 on a scale of -1 to +1
     
 4. Exporting Results:
-    - Saved clusters in 4 different Data Frames
+    - Saved clusters in four different Data Frames
     - Exported resulting data and classes into a new CSV (ClusteredData.csv)
 
 ## SOURCES:
