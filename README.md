@@ -110,7 +110,7 @@ As mentioned previously, PostgreSQL was used as the data and hosted on AWS.
 
 Initial exploration was conducted using Pandas and Matplotlib using jupyter notebook (Python). Individual variables were analyzed to determine the overall makeup of the dataset and understand average and majority responses. This helped indicate the nature of the dataset and the responses to then move onto deeper analysis conducted on Tableau and through Machine Learning, to determine any correlations. The analysis conducted through Tableau helped determine correlations between categories of demographics, other diseases, health status and lifestyle choices with visualizations. 
 
-Click the link here to view the chosen data set: [Healthy Hearts Data Cleaning & Exploration](https://github.com/ahmadelbaba/HealthyHearts/blob/7f4b78270c92e0aa2f0d3837c002675a5d7c2a18/01_DataCleaingExploration.ipynb)
+Click the link here to view the chosen data set: [Healthy Hearts Data Cleaning & Exploration](https://github.com/ahmadelbaba/HealthyHearts/blob/4267a7d77a5f84b8385c17128b74be5bb9e2e607/01_DataCleaningExploration.ipynb)
 
 The table below highlights the average and majority responses to the data surveryed. It depicts the characteristics of the average respondents. 
 
