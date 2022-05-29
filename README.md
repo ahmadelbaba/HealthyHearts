@@ -32,8 +32,7 @@ Two tables have been created out of the source data; one for demographics inform
 
 Click the link here to view the SQL code for Data Tables: [Healthy Hearts SQL Tables](https://github.com/ahmadelbaba/HealthyHearts/blob/7f4b78270c92e0aa2f0d3837c002675a5d7c2a18/Helthy_Hearts%20-%20updated.sql)
 
-ERD IMAGE OR FILE???
-Quickdbd was used to build an ERD. Click the link here to view the ERD: [Healthy Hearts ERD]()
+Quickdbd was used to build an ERD. Click the link here to view the ERD: [Healthy Hearts ERD](https://github.com/ahmadelbaba/HealthyHearts/blob/9bb985fe3aac7351e005463f8fe052e833171386/images/Hearts.png)
 
 ### Variables
 
