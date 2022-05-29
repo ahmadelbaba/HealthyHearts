@@ -146,6 +146,7 @@ During the Data exploration phase, the following was concluded:
 - Respondents who reported having kidney disease more frequently also reported having heart disease than people who did not have kidney disease. 
 - Respondents who reported being more physically active reported having no heart disease as compared to respondents who were not physically active.
 - Heart disease and stroke are not synonymous. However, respondents with heart disease had a higher likelihood of having a stroke.  
+- On average, younger populations reported better general health and minimal to no heart disease. 
 
 Click the link here to view the data exploration visualizations and further analysis: [Healthy Hearts Data Visualizations and Analysis](https://public.tableau.com/views/HealthyHearts/HeartDisease?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link)
 
