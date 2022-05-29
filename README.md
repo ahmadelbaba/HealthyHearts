@@ -26,7 +26,9 @@ The current dataset has been cleaned and transformed from nearly 300 variables t
 
 ### ERD
 
-As we have just one fairly clean data set we are not creating an ERD. All the variables are in the same table.
+Two tables have been created out of the source data; one for demographics informaiton and the other for all health or related issues. The two tables are linked by an 'ID' column as the primary key. 
+
+Click the link here to view the SQL code for Data Tables: [Healthy Hearts SQL Tables](https://github.com/ahmadelbaba/HealthyHearts/blob/7f4b78270c92e0aa2f0d3837c002675a5d7c2a18/Helthy_Hearts%20-%20updated.sql)
 
 ### Variables
 
@@ -78,11 +80,50 @@ SciKitLearn is the ML library we'll be using to create a classifier. Plotly and 
 **Dashboard:**
 We intend to use Tableau to visualise and display the data and build an interactive dashboard. 
 
-## **DATABASE MOCKUP**
+## **DATA EXPLORATION & DATABASE**
+### DATABASE 
+As mentioned previously, PostgreSQL was used as the data and hosted on AWS. 
 
-As mentioned previously, PostgreSQL will be used as the data and will be hosted on AWS. The database will include one table only with the variables mentioned above as columns. 
+### DATA EXPLORATION
+Click the link here to view the chosen data set: [Healthy Hearts Data Cleaning & Exploration](https://github.com/ahmadelbaba/HealthyHearts/blob/7f4b78270c92e0aa2f0d3837c002675a5d7c2a18/01_DataCleaingExploration.ipynb)
 
-Click the link here to view the chosen data set: [Healthy Hearts Data Summary](https://github.com/ahmadelbaba/HealthyHearts/blob/3a0a2f94c18134cf9dee42f743de41ecf0d15ad1/HealthyHeartsDataSummary.ipynb)
+The table below highlights the average and majority responses to the data surveryed. It depicts the characteristics of the average respondents. 
+
+| Variable Name | Average Response | Percentage |
+| ------------- | ------------- | ------------- |
+| HeartDisease | No | 91.44 % |
+| BMI | 28.33 | - |
+| Smoking | No | 58.75 % |
+| AlcoholDrinking | No | 93.19 % |
+| Stroke | No | 96.22 % |
+| PhysicalHealth | 0 days | 70.85 % |
+MentalHealth | 0 days | 64.22 % |
+| DiffWalking | No | 86.11 % |
+| Sex | Female | 52.54 % |
+| AgeCategory | 65 - 69 years | 10.68 % |
+| Race | White | 76.67 % |
+| Diabetic | No | 84.32 % |
+| PhysicalActivity | Yes | 77.53 % |
+| GenHealth | Very Good | 35.60 % |
+| SleepTime | 7 hours | 30.57 % |
+| Asthma | No | 86.28 % |
+| KidneyDisease | No | 96.31 % |
+| SkinCancer | No | 90.68 % |
+
+During the Data exploration phase, the following was concluded: 
+- Majority of the respondents are white and this is also the race that reported having the highest count for heart disease. This is a direct result of the makeup of the American populaiton which consists of majority white. 
+- Overall there are more female respondents than males. Males, particulary white males, have most frequently reported to having heart disease. 
+- Heart disease increases with age. Older (60+ years) populaitons reported having more heart disease than younger (under 60 years). 
+- Number of smokers is higher than non-smokers, particularly in older populations with heart disease. 
+- Respondents who reported having skin cancer more frequently also reported having heart disease than people who did not have skin cancer. 
+- Respondents who reported having diabetes more frequently also reported having heart disease than people who did not have diabetes. 
+- Respondents who reported having asthma more frequently also reported having heart disease than people who did not have asthma. 
+- Respondents who reported having kidney disease more frequently also reported having heart disease than people who did not have kidney disease. 
+- Respondents who reported being more physically active reported having no heart disease as compared to respondents who were not physically active.
+- Heart disease and stroke are not synonymous. However, respondents with heart disease had a higher likelihood of having a stroke.  
+
+Click the link here to view the data exploration visualizations and further analysis: [Healthy Hearts Data Visualizations and Analysis](https://public.tableau.com/views/HealthyHearts/HeartDisease?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link)
+
 
 ### ETL Process 
 
@@ -92,7 +133,7 @@ During data extraction, raw data is exported from source locations to a staging 
 
 **Transforming Data:** 
 
-The data will be staged in PostgreSQL, where it will undergo data processing. Here it will be consolidated for our analytical use case. This will include re-encoding dichotomous responses to numeric binary values, cleaning out null values, summarizing based on raw data, and formatting the data into tables or data frames. 
+The data is staged in PostgreSQL, where it undrwent data processing. Here it was consolidated for our analytical use case. This included re-encoding dichotomous responses to numeric binary values, cleaning out null values, summarizing based on raw data, and formatting the data into tables or data frames. Two tables were created out of the source data, categorized as demogrpahics and health tables. Moreover an 'ID' colmn was added to the table for primary key purposes to link the two separated tables. 
 
 **Loading Data:**
 
