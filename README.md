@@ -169,17 +169,63 @@ Access the Dashboard Layout here: [Healthy Hearts Dahsboard Layout](https://gith
 
 In this case supervised Machine Learning is a great method in helping us predict heart disease outcomes solely based on numerous factors in our data set. The variables provided could influence the result of someone either having heart disease or not. It will also uncover any weaknesses and strengths in our data relative to our assessment by training and testing the model in different simulations. In order to do so we must split the data into training and testing sets. We will attempt to find out whether certain variables have a stronger effect on the outcome than others. But more specifically if the attributes you cannot control show any true accuracy in heart disease prediction.  
 
-The team will use Scikit-learn library for various different tools such as Logistic Regression and Random Forest Classifiers. As well as utilizing the imblearn library for Oversampling and Undersampling where needed.  
+The team will use Scikit-learn library for various different tools such as Logistic Regression and Random Forest Classifiers. As well as utilizing the imblearn library for Oversampling or Undersampling where needed.  
 
 For our model will we start by importing the data and converting it into a usable dataframe on Jupyter Notebook. The data will be cleaned and filtered removing any found null-values. For this step if there is a null-value in any column that row is then removed from the dataset.  
 
-Confusion matrices will help us undiscover the measured precision, accuracy, and sensitivity in our different simulations. This will be the main factor in determining the strength of certain variables in terms of the correct prediction of heart disease.  
+Confusion matrices will help us undiscover the measured precision, accuracy, and sensitivity in our model. This will be the main factor in determining the strength of certain variables in terms of the correct prediction of heart disease.  
 
-In order to use this dataset with our supervised model we needed to go about various steps of preprocessing. First we needed to remove the index column from the dataset because this parameter is not useful in our model. Next we needed to convert all the “Yes” values to 1s and “No” values to 0, except for the Yes and Nos in the “Diabetes” column simply because there is more benefit in separating that column into the 4 sections of “Yes”, “No”, “Yes -(during pregnancy), and “No - borderline diabetes”. Once this step is complete we need to encode the non numerical parameters to create different categories that read a numerical value for the model to interpret. And finally we use the new table created to combine with the original dataset while dropping the original columns of those encoded parameters. This gives us a new data frame that will be compatible with our model.
+In order to use this dataset with our supervised model we needed to go about various steps of preprocessing. First we needed to remove the index column from the dataset because this parameter is not useful in our model. Next we needed to convert all the “Yes” values to 1s and “No” values to 0, except for the Yes and Nos in the “Diabetes” column simply because there is more benefit in separating that column into the 4 sections of “Yes”, “No”, “Yes - (during pregnancy), and “No - borderline diabetes”. Once this step is complete we need to encode the non numerical parameters to create different categories that read a numerical value for the model to interpret. And finally we use the new table created to combine with the original dataset while dropping the original columns of those encoded parameters. This gives us a new data frame that will be compatible with our model.
 
-In order to test the different features we must remove specific parameters to uncover any strengths and weaknesses of a group of features. To help choose which features we will test and how, we will calculate the feature importance  measurements to determine which parameters may have a stronger effect on the predictions of our model. The correlation matrix will help determine which parameters tend to have a strong relationship in where they effect each other to some degree. The correlation matrix will help decide whether certain features should consistently be grouped together or not.
+In order to test the different features we must remove specific parameters to uncover any strengths and weaknesses of a group of features. To help choose which features we will test and how, we will calculate the feature importance measurements to determine which parameters may have a stronger effect on the predictions of our model. This will be the key determining factor of the feature selection in our accuracy tests.
 
-The model of Logistic Regression will be used for this test because of the nature of our prediction. We are aiming to ultimately predict whether a certain set of features can successfully uncover whether someone has heart disease or not. Logistic Regression is the perfect model for this test. Oversampling will be used over a Random Forest Classifier because when tested for accuracy with the original dataset the method of Oversampling showed a larger return in accuracy.
+The model of Logistic Regression will be used for this test because of the nature of our prediction. We are aiming to ultimately predict whether a certain set of features can successfully uncover whether someone has heart disease or not. Logistic Regression is the perfect model for this test. Oversampling will be used to assist Random Forest Classifier because when tested for accuracy with the original dataset this method of Oversampling showed a larger return in accuracy.
+
+#### **Results**
+
+When feature importance was calculated, it was able to uncover some stand out variables both negatively and positively. 
+Features that initially showed largerr levels of importance (before testing)
+  - Diabetes (Yes and No variables)
+  - White in the Race column 
+  - Age categories above 60 
+  - Sleep Time
+  - General Health
+  - Physical Health
+  - Mental Health 
+  - Sex
+  
+Features that initially showed smaller levels of importance (before testing)
+  - Yes (during pregnancy) and No, borderline diabetes values in the Diabetes column
+  - Every race except for White
+  - Age categories below 60 
+  - Alcohol Drinking
+  - Stroke
+  - Kidney Disease 
+  - Skin Cancer
+  - Asthma
+
+Some things to note about this initial reading is that the distribution of largely skewed in favour of some variables within certain columns. In Race the count for White is extremely overwhelming in comparison to most of the other races. In this case there is a good chance that White is seen as a strong feature simply because of its prominence in many correct predictions and not because of its contribution. This will need further investigation. When it comes to the Diabetes column there are 4 sections that all lead to either a Yes or No answer. Yes (during pregnancy) and No, borderline diabetes have little frequency in comparison to Yes and No. To deal with this without merging the Yes and No variables together is to test how the accuracy test reacts when removing the features. The fear in merging is ignoring the differences between both the Yes features and the No features. In this test, removing the features did not effect the accuracy. For the age categories it is seen that as someone gets older it becomes easier to predict Heart Disease. The question here would be what age would be optimal for accuracy. After conducting multiple tests it is seen that leaving the ages below 40 out is the best decision for the model.
+
+In the investigation of the contribution of race we needed to isolate each race and remove the biases from distribution as best as we can to determine if race as a whole is a good feature or not. To do this we are only testing each race column where the invidual is the race (Yes). This is because having the "No" in the specific race column as well as the "Yes" leaves for a very vague variable. This No variable could be any other race out of the 5 remaining, this weakens the test. In this test the accuracy rose for each individual race except for white. An explanation for this could be the fact that there were so many counts of white that it becomes harder in comparison to each race to truly predict. But in conclusion, it is fair to say that race is a good feature to have in the model and shows trends that would imply that it plays a part in predicting Heart Disease.
+
+#### **Supervised Conclusion**
+
+The goal of the supervised model was to confidently be able to determine which features should be focused on when predicting Heart Disease. The model was able to seperate the strong and weak contributors uncovering the answer to the question. 
+
+Features that should be used in general prediction of Heart Disease
+  - Diabetes
+  - Race 
+  - Age if above 40 
+  - Sleep Time
+  - General Health
+  - Physical Health
+  - Mental Health 
+  - Sex
+  - Physical Activity
+  - Difficulty Walking
+  - Smoking 
+
+This is the first step in Heart Disease prediction, it would need to be further examined using a different model to figure out the red flags in each of these features.
 
 Access Surpervised ML code here: [Healthy Hearts Supervised ML](https://github.com/ahmadelbaba/HealthyHearts/blob/fabdc6fab35930223679ae2af621a7e816f866ab/03_Supervised_ML.ipynb)
 
