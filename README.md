@@ -144,8 +144,8 @@ During the Data exploration phase, the following was concluded:
   <img src="https://github.com/ahmadelbaba/HealthyHearts/blob/viz/images/race.jpg" width=300 align=center>. 
 - Overall there are more female respondents than males. Males, particulary white males, have most frequently reported to having heart disease.  
   <img src="https://github.com/ahmadelbaba/HealthyHearts/blob/viz/images/sex.jpg" width=300 align=center>.
-- Heart disease increases with age. Older (60+ years) populaitons reported having more heart disease than younger (under 60 years). 
-  <img src="https://github.com/ahmadelbaba/HealthyHearts/blob/viz/images/age.jpg" width=300 align=center>.
+- Heart disease increases with age. Older (60+ years) populaitons reported having more heart disease than younger (under 60 years).  
+  <img src="https://github.com/ahmadelbaba/HealthyHearts/blob/viz/images/age.jpg" width=300 align=center>.   
 - Number of smokers is higher than non-smokers, particularly in older populations with heart disease. 
 - Respondents who reported having skin cancer more frequently also reported having heart disease than people who did not have skin cancer. 
 - Respondents who reported having diabetes more frequently also reported having heart disease than people who did not have diabetes. 
