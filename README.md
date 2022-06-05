@@ -28,11 +28,11 @@ The current dataset has been cleaned and transformed from nearly 300 variables t
 
 ### ERD
 
-Two tables have been created out of the source data; one for demographics informaiton and the other for all health or related issues. The two tables are linked by an 'ID' column as the primary key. 
+There are four tables created out of the source data; three for demographic informaiton including race, age and sex, and the other for all health or related issues. The four tables are linked by an 'ID' column as the primary key. 
 
-Click the link here to view the SQL code for Data Tables: [Healthy Hearts SQL Tables](https://github.com/ahmadelbaba/HealthyHearts/blob/7f4b78270c92e0aa2f0d3837c002675a5d7c2a18/Helthy_Hearts%20-%20updated.sql)
+Click the link here to view the SQL code for Data Tables: [Healthy Hearts SQL Tables](https://github.com/ahmadelbaba/HealthyHearts/blob/f71b0d4bb5576e16e1fdc2fc5cac6c86ea58c929/Helthy_Hearts%20-%20updated.sql)
 
-Quickdbd was used to build an ERD. Click the link here to view the ERD: [Healthy Hearts ERD](https://github.com/ahmadelbaba/HealthyHearts/blob/9bb985fe3aac7351e005463f8fe052e833171386/images/Hearts.png)
+Quickdbd was used to build an ERD. Click the link here to view the ERD: [Healthy Hearts ERD](https://github.com/ahmadelbaba/HealthyHearts/blob/f71b0d4bb5576e16e1fdc2fc5cac6c86ea58c929/images/Hearts.png)
 
 ### Variables
 
@@ -73,21 +73,21 @@ The team has decided to use Slack as the forum for communication. A team group c
 ## **TECHNOLOGIES USED**
 
 **Database and Storage:**
-PostgresSQL database will be used as the DataBase to manage the large dataset in its entirety, and will be hosted on Amazon's AWS' relational database service (RDS) . We require a large amount of data to be stored. AWS provides us the capacity to store large amounts of data with public access, making it a good fit for our purposes.
+PostgresSQL database was used as the DataBase to manage the large dataset in its entirety, and the data is hosted on Amazon's AWS' relational database service (RDS) . We require a large amount of data to be stored. AWS provides us the capacity to store large amounts of data with public access, making it a good fit for our purposes.
 
 **Data Cleaning and Analysis:**
-Python and Pandas will be be used on Jupyter Notebook to clean the data and perform further exploratory analysis. 
+Python and Pandas were used on Jupyter Notebook to clean the data and perform exploratory analysis. 
 
 **Machine Learning:**
-SciKitLearn is the ML library we'll be using to create a classifier. Plotly and hvPlot will be utilized to help visualize the outcomes. We will also be using Principal Component Analysis (PCA) for fetaure reduction. 
+SciKitLearn is the ML library used to create a classifier. Plotly and hvPlot was utilized to help visualize the outcomes. We also used Principal Component Analysis (PCA) for fetaure reduction. 
 
 **Dashboard:**
-We intend to use Tableau to visualise and display the data and build an interactive dashboard. 
+Tableau was used to visualise and display the data and build an interactive dashboard. 
 
 
 ## **DATABASE**
 
-PostgreSQL will be used as the data and will be hosted on AWS. The database will include one table only with the variables mentioned above as columns. 
+PostgreSQL was used for the data and it is hosted on AWS. The database includes four tables; age, gendr, race and health_info. These were joined in PostgreSQL. 
 
 Click the link here to view the chosen data set summary, cleaning and initial exploratory analysis: [Healthy Hearts Data Summary](https://github.com/ahmadelbaba/HealthyHearts/blob/3a0a2f94c18134cf9dee42f743de41ecf0d15ad1/HealthyHeartsDataSummary.ipynb)
 
@@ -103,10 +103,10 @@ The data is staged in PostgreSQL, where it undrwent data processing. Pandas and 
 
 **Loading Data:**
 
-The transformed data will be stored in a database. We have chosen AWS to store our data. 
+The transformed data is stored in a database. We have chosen AWS to store our data. 
 
 ### DATABASE 
-As mentioned previously, PostgreSQL was used as the data and hosted on AWS. 
+As mentioned previously, PostgreSQL was used and the data is hosted on AWS. 
 
 ## **DATA EXPLORATION: VISUALIZATIONS & DASHBOARD**
 
@@ -114,7 +114,7 @@ As mentioned previously, PostgreSQL was used as the data and hosted on AWS.
 
 Initial exploration was conducted using Pandas and Matplotlib using jupyter notebook (Python). Individual variables were analyzed to determine the overall makeup of the dataset and understand average and majority responses. This helped indicate the nature of the dataset and the responses to then move onto deeper analysis conducted on Tableau and through Machine Learning, to determine any correlations. The analysis conducted through Tableau helped determine correlations between categories of demographics, other diseases, health status and lifestyle choices with visualizations. 
 
-Click the link here to view the chosen data set summary, cleaning and initial exploratory analysis: [Healthy Hearts Data Cleaning & Exploration](https://github.com/ahmadelbaba/HealthyHearts/blob/4267a7d77a5f84b8385c17128b74be5bb9e2e607/01_DataCleaningExploration.ipynb)
+Click the link here to view the chosen data set summary, cleaning and initial exploratory analysis conducted through Python: [Healthy Hearts Data Cleaning & Exploration](https://github.com/ahmadelbaba/HealthyHearts/blob/4267a7d77a5f84b8385c17128b74be5bb9e2e607/01_DataCleaningExploration.ipynb)
 
 The table below highlights the average and majority responses to the data surveryed. It depicts the characteristics of the average respondents. 
 
@@ -141,11 +141,8 @@ MentalHealth | 0 days | 64.22 % |
 
 During the Data exploration phase, the following was concluded: 
 - Majority of the respondents are white and this is also the race that reported having the highest count for heart disease. This is a direct result of the makeup of the American populaiton which consists of majority white.  
-  <img src="https://github.com/ahmadelbaba/HealthyHearts/blob/viz/images/race.jpg" width=300 align=center>. 
 - Overall there are more female respondents than males. Males, particulary white males, have most frequently reported to having heart disease.  
-  <img src="https://github.com/ahmadelbaba/HealthyHearts/blob/viz/images/sex.jpg" width=300 align=center>.
 - Heart disease increases with age. Older (60+ years) populaitons reported having more heart disease than younger (under 60 years).  
-  <img src="https://github.com/ahmadelbaba/HealthyHearts/blob/viz/images/age.jpg" width=300 align=center>.   
 - Number of smokers is higher than non-smokers, particularly in older populations with heart disease. 
 - Respondents who reported having skin cancer more frequently also reported having heart disease than people who did not have skin cancer. 
 - Respondents who reported having diabetes more frequently also reported having heart disease than people who did not have diabetes. 
@@ -155,15 +152,13 @@ During the Data exploration phase, the following was concluded:
 - Heart disease and stroke are not synonymous. However, respondents with heart disease had a higher likelihood of having a stroke.  
 - On average, younger populations reported better general health and minimal to no heart disease. 
 
-Click the link here to view the data exploration visualizations and further analysis: [Healthy Hearts Data Visualizations and Analysis](https://public.tableau.com/views/HealthyHearts/HeartDisease?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link)
+Click the link here to view the data exploration visualizations and initial analysis conducted on Tableau: [Healthy Hearts Data Visualizations and Analysis](https://public.tableau.com/app/profile/maha.shah7782/viz/HeartDiseaseDataExplorationVisualizations/HeartDisease#2)
 
 Further visualizations were created on Tableau. Tableau was also used for hosting analysis (in stories). 
 
-### Dashboard 
+### **DASHBOARD: [Tableau Link](https://public.tableau.com/app/profile/maha.shah7782/viz/HealthyHearts/HealthyHearts#1)**
 
-A Dashboard will be created in Tableau. A storyboard for the dashboard has been presented in the google slides presentation. The Dashboard will be segregated into four categories: Demographic information, Health Status, Other Diseases and Lifestyle Choices. The Dashbaord will present how these four categories impact Heart Disease. There will be filters embedded in the Dashboard for ease of navigation to visually showcase and deterine the impact of the four categories on Heart Disease. Moreover, Tableau allows for interactive data visualization by "hover-over" information boxes which will further help provide clarification and support data analysis. 
-
-Access the Dashboard Layout here: [Healthy Hearts Dahsboard Layout](https://github.com/ahmadelbaba/HealthyHearts/blob/8a7cfab22dbecf357612307fbff45f93ee87e84b/images/DashboardLayout.png)
+A Dashboard was created in Tableau. A storyboard for the dashboard has been presented in the google slides presentation. The Dashboard is segregated into four categories: Demographic information, Health Status, Other Diseases and Lifestyle Choices. The Dashbaord presents how these four categories impact Heart Disease. There are filters embedded in the Dashboard for ease of navigation to visually showcase and deterine the impact of the four categories on Heart Disease. Moreover, Tableau allows for interactive data visualization by "hover-over" information boxes which will further help provide clarification and support data analysis. Both Supervised and Unsupervised Machine Learning Results are also presented in the Dashboard. 
 
 
 ## **MACHINE LEARNING ANALYSIS**
@@ -207,9 +202,21 @@ Features that initially showed smaller levels of importance (before testing)
   - Skin Cancer
   - Asthma
 
+<p align="center">
+  <img width="650" src="https://github.com/ahmadelbaba/HealthyHearts/blob/f220331fd27c68161f0e362207a3186b980b738a/images/FeatureImportance.png">
+</p>
+
 Some things to note about this initial reading is that the distribution of largely skewed in favour of some variables within certain columns. In Race the count for White is extremely overwhelming in comparison to most of the other races. In this case there is a good chance that White is seen as a strong feature simply because of its prominence in many correct predictions and not because of its contribution. This will need further investigation. When it comes to the Diabetes column there are 4 sections that all lead to either a Yes or No answer. Yes (during pregnancy) and No, borderline diabetes have little frequency in comparison to Yes and No. To deal with this without merging the Yes and No variables together is to test how the accuracy test reacts when removing the features. The fear in merging is ignoring the differences between both the Yes features and the No features. In this test, removing the features did not effect the accuracy. For the age categories it is seen that as someone gets older it becomes easier to predict Heart Disease. The question here would be what age would be optimal for accuracy. After conducting multiple tests it is seen that leaving the ages below 40 out is the best decision for the model.
 
+<p align="center">
+  <img width="650" src="https://github.com/ahmadelbaba/HealthyHearts/blob/f220331fd27c68161f0e362207a3186b980b738a/images/AccuracyScoresData.png">
+</p>
+
 In the investigation of the contribution of race we needed to isolate each race and remove the biases from distribution as best as we can to determine if race as a whole is a good feature or not. To do this we are only testing each race column where the invidual is the race (Yes). This is because having the "No" in the specific race column as well as the "Yes" leaves for a very vague variable. This No variable could be any other race out of the 5 remaining, this weakens the test. In this test the accuracy rose for each individual race except for white. An explanation for this could be the fact that there were so many counts of white that it becomes harder in comparison to each race to truly predict. But in conclusion, it is fair to say that race is a good feature to have in the model and shows trends that would imply that it plays a part in predicting Heart Disease.
+
+<p align="center">
+  <img width="650" src="https://github.com/ahmadelbaba/HealthyHearts/blob/f220331fd27c68161f0e362207a3186b980b738a/images/AccuracyScoresRace.png">
+</p>
 
 #### **Supervised Conclusion**
 
@@ -246,6 +253,12 @@ Given that the number of features is high, the team will attempt feature-reducti
 
 Finally clusters will be generated again based on the outcome from PCA.
 
+<p align="center">
+  <img width="650" src="https://github.com/ahmadelbaba/HealthyHearts/blob/f220331fd27c68161f0e362207a3186b980b738a/images/newplot.png">
+</p>
+
+(The fully interactable version can be accessed here: [3D Scatter Plot](https://github.com/ahmadelbaba/HealthyHearts/blob/f220331fd27c68161f0e362207a3186b980b738a/images/3d_scatter.html))
+
 #### **Code Summary:**
 
 Access Unsurpervised ML code here: [Healthy Hearts Unsupervised ML](https://github.com/ahmadelbaba/HealthyHearts/blob/fabdc6fab35930223679ae2af621a7e816f866ab/02_Unsupervised_ML.ipynb)
@@ -270,6 +283,17 @@ Access Unsurpervised ML code here: [Healthy Hearts Unsupervised ML](https://gith
 4. Exporting Results:
     - Saved clusters in four different Data Frames
     - Exported resulting data and classes into a new CSV (ClusteredData.csv)
+
+## CONCLUSION
+
+This analysis concludes that individual demographic information and medical history, particularly other diseases, can predispose individuals to getting heart disease. 
+
+This has implications for public awareness and education campaigns. Elder age groups (60+), males should be the primary target audience for heart health promotion and awareness. Furthermore, patients of diabetes and skin cancer also form a significant subsect of individuals prone to heart disease. 
+
+The analysis and findings provided here speak to target audience for heart health promotion to alleviate the burdens from the healthcare system when such diseases get to terminal or end stages. This analysis has helped identify key segments of the population who should take further preventative steps to make healthier choices for their heart health. This includes more physical activity and sleeping more. Patients with pre-existing diseases or medical conditions should make more frequent visits to their general physician to help early diagnosis and treatment. 
+
+This analysis has implications for medical practitioners, healthcare officials, government, and pharmaceutical companies for public awareness campaigns and targeted advertising for preventative heart health care. 
+
 
 ## SOURCES:
 -	https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease
