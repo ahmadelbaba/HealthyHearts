@@ -158,11 +158,7 @@ Further visualizations were created on Tableau. Tableau was also used for hostin
 
 ### **DASHBOARD: [Tableau Link](https://public.tableau.com/app/profile/maha.shah7782/viz/HealthyHearts/HealthyHearts#1)**
 
-### Dashboard 
-
 A Dashboard was created in Tableau. A storyboard for the dashboard has been presented in the google slides presentation. The Dashboard is segregated into four categories: Demographic information, Health Status, Other Diseases and Lifestyle Choices. The Dashbaord presents how these four categories impact Heart Disease. There are filters embedded in the Dashboard for ease of navigation to visually showcase and deterine the impact of the four categories on Heart Disease. Moreover, Tableau allows for interactive data visualization by "hover-over" information boxes which will further help provide clarification and support data analysis. Both Supervised and Unsupervised Machine Learning Results are also presented in the Dashboard. 
-
-Access the Dashboard here: [Healthy Hearts Dahsboard Layout](https://github.com/ahmadelbaba/HealthyHearts/blob/8a7cfab22dbecf357612307fbff45f93ee87e84b/images/DashboardLayout.png)
 
 
 ## **MACHINE LEARNING ANALYSIS**
