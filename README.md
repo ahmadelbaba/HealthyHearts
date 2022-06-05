@@ -284,6 +284,17 @@ Access Unsurpervised ML code here: [Healthy Hearts Unsupervised ML](https://gith
     - Saved clusters in four different Data Frames
     - Exported resulting data and classes into a new CSV (ClusteredData.csv)
 
+## CONCLUSION
+
+This analysis concludes that individual demographic information and medical history, particularly other diseases, can predispose individuals to getting heart disease. 
+
+This has implications for public awareness and education campaigns. Elder age groups (60+), males should be the primary target audience for heart health promotion and awareness. Furthermore, patients of diabetes and skin cancer also form a significant subsect of individuals prone to heart disease. 
+
+The analysis and findings provided here speak to target audience for heart health promotion to alleviate the burdens from the healthcare system when such diseases get to terminal or end stages. This analysis has helped identify key segments of the population who should take further preventative steps to make healthier choices for their heart health. This includes more physical activity and sleeping more. Patients with pre-existing diseases or medical conditions should make more frequent visits to their general physician to help early diagnosis and treatment. 
+
+This analysis has implications for medical practitioners, healthcare officials, government, and pharmaceutical companies for public awareness campaigns and targeted advertising for preventative heart health care. 
+
+
 ## SOURCES:
 -	https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease
 -	https://www.cdc.gov/brfss/questionnaires/index.ht
