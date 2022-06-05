@@ -141,11 +141,8 @@ MentalHealth | 0 days | 64.22 % |
 
 During the Data exploration phase, the following was concluded: 
 - Majority of the respondents are white and this is also the race that reported having the highest count for heart disease. This is a direct result of the makeup of the American populaiton which consists of majority white.  
-  <img src="https://github.com/ahmadelbaba/HealthyHearts/blob/viz/images/race.jpg" width=300 align=center>. 
 - Overall there are more female respondents than males. Males, particulary white males, have most frequently reported to having heart disease.  
-  <img src="https://github.com/ahmadelbaba/HealthyHearts/blob/viz/images/sex.jpg" width=300 align=center>.
 - Heart disease increases with age. Older (60+ years) populaitons reported having more heart disease than younger (under 60 years).  
-  <img src="https://github.com/ahmadelbaba/HealthyHearts/blob/viz/images/age.jpg" width=300 align=center>.   
 - Number of smokers is higher than non-smokers, particularly in older populations with heart disease. 
 - Respondents who reported having skin cancer more frequently also reported having heart disease than people who did not have skin cancer. 
 - Respondents who reported having diabetes more frequently also reported having heart disease than people who did not have diabetes. 
@@ -155,15 +152,17 @@ During the Data exploration phase, the following was concluded:
 - Heart disease and stroke are not synonymous. However, respondents with heart disease had a higher likelihood of having a stroke.  
 - On average, younger populations reported better general health and minimal to no heart disease. 
 
-Click the link here to view the data exploration visualizations and further analysis: [Healthy Hearts Data Visualizations and Analysis](https://public.tableau.com/views/HealthyHearts/HeartDisease?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link)
+Click the link here to view the data exploration visualizations and initial analysis: [Healthy Hearts Data Visualizations and Analysis](https://public.tableau.com/app/profile/maha.shah7782/viz/HeartDiseaseDataExplorationVisualizations/HeartDisease#2)
 
 Further visualizations were created on Tableau. Tableau was also used for hosting analysis (in stories). 
 
+### **DASHBOARD: [Tableau Link](https://public.tableau.com/app/profile/maha.shah7782/viz/HealthyHearts/HealthyHearts#1)**
+
 ### Dashboard 
 
-A Dashboard will be created in Tableau. A storyboard for the dashboard has been presented in the google slides presentation. The Dashboard will be segregated into four categories: Demographic information, Health Status, Other Diseases and Lifestyle Choices. The Dashbaord will present how these four categories impact Heart Disease. There will be filters embedded in the Dashboard for ease of navigation to visually showcase and deterine the impact of the four categories on Heart Disease. Moreover, Tableau allows for interactive data visualization by "hover-over" information boxes which will further help provide clarification and support data analysis. 
+A Dashboard was created in Tableau. A storyboard for the dashboard has been presented in the google slides presentation. The Dashboard is segregated into four categories: Demographic information, Health Status, Other Diseases and Lifestyle Choices. The Dashbaord presents how these four categories impact Heart Disease. There are filters embedded in the Dashboard for ease of navigation to visually showcase and deterine the impact of the four categories on Heart Disease. Moreover, Tableau allows for interactive data visualization by "hover-over" information boxes which will further help provide clarification and support data analysis. Both Supervised and Unsupervised Machine Learning Results are also presented in the Dashboard. 
 
-Access the Dashboard Layout here: [Healthy Hearts Dahsboard Layout](https://github.com/ahmadelbaba/HealthyHearts/blob/8a7cfab22dbecf357612307fbff45f93ee87e84b/images/DashboardLayout.png)
+Access the Dashboard here: [Healthy Hearts Dahsboard Layout](https://github.com/ahmadelbaba/HealthyHearts/blob/8a7cfab22dbecf357612307fbff45f93ee87e84b/images/DashboardLayout.png)
 
 
 ## **MACHINE LEARNING ANALYSIS**
@@ -253,6 +252,7 @@ Given that the number of features is high, the team will attempt feature-reducti
 Finally clusters will be generated again based on the outcome from PCA.
 
 ![UML](https://github.com/ahmadelbaba/HealthyHearts/blob/f220331fd27c68161f0e362207a3186b980b738a/images/newplot.png)
+
 (The fully interactable version can be accessed here: [3D Scatter Plot](https://github.com/ahmadelbaba/HealthyHearts/blob/f220331fd27c68161f0e362207a3186b980b738a/images/3d_scatter.html)
 
 #### **Code Summary:**
