@@ -73,21 +73,21 @@ The team has decided to use Slack as the forum for communication. A team group c
 ## **TECHNOLOGIES USED**
 
 **Database and Storage:**
-PostgresSQL database will be used as the DataBase to manage the large dataset in its entirety, and will be hosted on Amazon's AWS' relational database service (RDS) . We require a large amount of data to be stored. AWS provides us the capacity to store large amounts of data with public access, making it a good fit for our purposes.
+PostgresSQL database was used as the DataBase to manage the large dataset in its entirety, and the data is hosted on Amazon's AWS' relational database service (RDS) . We require a large amount of data to be stored. AWS provides us the capacity to store large amounts of data with public access, making it a good fit for our purposes.
 
 **Data Cleaning and Analysis:**
-Python and Pandas will be be used on Jupyter Notebook to clean the data and perform further exploratory analysis. 
+Python and Pandas were used on Jupyter Notebook to clean the data and perform exploratory analysis. 
 
 **Machine Learning:**
-SciKitLearn is the ML library we'll be using to create a classifier. Plotly and hvPlot will be utilized to help visualize the outcomes. We will also be using Principal Component Analysis (PCA) for fetaure reduction. 
+SciKitLearn is the ML library used to create a classifier. Plotly and hvPlot was utilized to help visualize the outcomes. We also used Principal Component Analysis (PCA) for fetaure reduction. 
 
 **Dashboard:**
-We intend to use Tableau to visualise and display the data and build an interactive dashboard. 
+Tableau was used to visualise and display the data and build an interactive dashboard. 
 
 
 ## **DATABASE**
 
-PostgreSQL will be used as the data and will be hosted on AWS. The database will include one table only with the variables mentioned above as columns. 
+PostgreSQL was used for the data and it is hosted on AWS. The database includes four tables; age, gendr, race and health_info. These were joined in PostgreSQL. 
 
 Click the link here to view the chosen data set summary, cleaning and initial exploratory analysis: [Healthy Hearts Data Summary](https://github.com/ahmadelbaba/HealthyHearts/blob/3a0a2f94c18134cf9dee42f743de41ecf0d15ad1/HealthyHeartsDataSummary.ipynb)
 
@@ -103,10 +103,10 @@ The data is staged in PostgreSQL, where it undrwent data processing. Pandas and 
 
 **Loading Data:**
 
-The transformed data will be stored in a database. We have chosen AWS to store our data. 
+The transformed data is stored in a database. We have chosen AWS to store our data. 
 
 ### DATABASE 
-As mentioned previously, PostgreSQL was used as the data and hosted on AWS. 
+As mentioned previously, PostgreSQL was used and the data is hosted on AWS. 
 
 ## **DATA EXPLORATION: VISUALIZATIONS & DASHBOARD**
 
@@ -114,7 +114,7 @@ As mentioned previously, PostgreSQL was used as the data and hosted on AWS.
 
 Initial exploration was conducted using Pandas and Matplotlib using jupyter notebook (Python). Individual variables were analyzed to determine the overall makeup of the dataset and understand average and majority responses. This helped indicate the nature of the dataset and the responses to then move onto deeper analysis conducted on Tableau and through Machine Learning, to determine any correlations. The analysis conducted through Tableau helped determine correlations between categories of demographics, other diseases, health status and lifestyle choices with visualizations. 
 
-Click the link here to view the chosen data set summary, cleaning and initial exploratory analysis: [Healthy Hearts Data Cleaning & Exploration](https://github.com/ahmadelbaba/HealthyHearts/blob/4267a7d77a5f84b8385c17128b74be5bb9e2e607/01_DataCleaningExploration.ipynb)
+Click the link here to view the chosen data set summary, cleaning and initial exploratory analysis conducted through Python: [Healthy Hearts Data Cleaning & Exploration](https://github.com/ahmadelbaba/HealthyHearts/blob/4267a7d77a5f84b8385c17128b74be5bb9e2e607/01_DataCleaningExploration.ipynb)
 
 The table below highlights the average and majority responses to the data surveryed. It depicts the characteristics of the average respondents. 
 
@@ -152,7 +152,7 @@ During the Data exploration phase, the following was concluded:
 - Heart disease and stroke are not synonymous. However, respondents with heart disease had a higher likelihood of having a stroke.  
 - On average, younger populations reported better general health and minimal to no heart disease. 
 
-Click the link here to view the data exploration visualizations and initial analysis: [Healthy Hearts Data Visualizations and Analysis](https://public.tableau.com/app/profile/maha.shah7782/viz/HeartDiseaseDataExplorationVisualizations/HeartDisease#2)
+Click the link here to view the data exploration visualizations and initial analysis conducted on Tableau: [Healthy Hearts Data Visualizations and Analysis](https://public.tableau.com/app/profile/maha.shah7782/viz/HeartDiseaseDataExplorationVisualizations/HeartDisease#2)
 
 Further visualizations were created on Tableau. Tableau was also used for hosting analysis (in stories). 
 
