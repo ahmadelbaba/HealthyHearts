@@ -249,7 +249,7 @@ Finally clusters will be generated again based on the outcome from PCA.
 
 ![UML](https://github.com/ahmadelbaba/HealthyHearts/blob/f220331fd27c68161f0e362207a3186b980b738a/images/newplot.png)
 
-(The fully interactable version can be accessed here: [3D Scatter Plot](https://github.com/ahmadelbaba/HealthyHearts/blob/f220331fd27c68161f0e362207a3186b980b738a/images/3d_scatter.html)
+(The fully interactable version can be accessed here: [3D Scatter Plot](https://github.com/ahmadelbaba/HealthyHearts/blob/f220331fd27c68161f0e362207a3186b980b738a/images/3d_scatter.html))
 
 #### **Code Summary:**
 
