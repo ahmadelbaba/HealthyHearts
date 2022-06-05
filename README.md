@@ -202,15 +202,21 @@ Features that initially showed smaller levels of importance (before testing)
   - Skin Cancer
   - Asthma
 
-![FeatureImp](https://github.com/ahmadelbaba/HealthyHearts/blob/f220331fd27c68161f0e362207a3186b980b738a/images/FeatureImportance.png)
+<p align="center">
+  <img width="650" src="https://github.com/ahmadelbaba/HealthyHearts/blob/f220331fd27c68161f0e362207a3186b980b738a/images/FeatureImportance.png">
+</p>
 
 Some things to note about this initial reading is that the distribution of largely skewed in favour of some variables within certain columns. In Race the count for White is extremely overwhelming in comparison to most of the other races. In this case there is a good chance that White is seen as a strong feature simply because of its prominence in many correct predictions and not because of its contribution. This will need further investigation. When it comes to the Diabetes column there are 4 sections that all lead to either a Yes or No answer. Yes (during pregnancy) and No, borderline diabetes have little frequency in comparison to Yes and No. To deal with this without merging the Yes and No variables together is to test how the accuracy test reacts when removing the features. The fear in merging is ignoring the differences between both the Yes features and the No features. In this test, removing the features did not effect the accuracy. For the age categories it is seen that as someone gets older it becomes easier to predict Heart Disease. The question here would be what age would be optimal for accuracy. After conducting multiple tests it is seen that leaving the ages below 40 out is the best decision for the model.
 
-![AccScoreData](https://github.com/ahmadelbaba/HealthyHearts/blob/f220331fd27c68161f0e362207a3186b980b738a/images/AccuracyScoresData.png)
+<p align="center">
+  <img width="650" src="https://github.com/ahmadelbaba/HealthyHearts/blob/f220331fd27c68161f0e362207a3186b980b738a/images/AccuracyScoresData.png">
+</p>
 
 In the investigation of the contribution of race we needed to isolate each race and remove the biases from distribution as best as we can to determine if race as a whole is a good feature or not. To do this we are only testing each race column where the invidual is the race (Yes). This is because having the "No" in the specific race column as well as the "Yes" leaves for a very vague variable. This No variable could be any other race out of the 5 remaining, this weakens the test. In this test the accuracy rose for each individual race except for white. An explanation for this could be the fact that there were so many counts of white that it becomes harder in comparison to each race to truly predict. But in conclusion, it is fair to say that race is a good feature to have in the model and shows trends that would imply that it plays a part in predicting Heart Disease.
 
-![AccScoreRace](https://github.com/ahmadelbaba/HealthyHearts/blob/f220331fd27c68161f0e362207a3186b980b738a/images/AccuracyScoresRace.png)
+<p align="center">
+  <img width="650" src="https://github.com/ahmadelbaba/HealthyHearts/blob/f220331fd27c68161f0e362207a3186b980b738a/images/AccuracyScoresRace.png">
+</p>
 
 #### **Supervised Conclusion**
 
@@ -247,7 +253,9 @@ Given that the number of features is high, the team will attempt feature-reducti
 
 Finally clusters will be generated again based on the outcome from PCA.
 
-![UML](https://github.com/ahmadelbaba/HealthyHearts/blob/f220331fd27c68161f0e362207a3186b980b738a/images/newplot.png)
+<p align="center">
+  <img width="650" src="https://github.com/ahmadelbaba/HealthyHearts/blob/f220331fd27c68161f0e362207a3186b980b738a/images/newplot.png">
+</p>
 
 (The fully interactable version can be accessed here: [3D Scatter Plot](https://github.com/ahmadelbaba/HealthyHearts/blob/f220331fd27c68161f0e362207a3186b980b738a/images/3d_scatter.html))
 
