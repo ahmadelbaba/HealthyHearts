@@ -28,7 +28,7 @@ The current dataset has been cleaned and transformed from nearly 300 variables t
 
 ### ERD
 
-There are four tables created out of the source data; three for demographic informaiton including race, age and sex, and the other for all health or related issues. The four tables are linked by an 'ID' column as the primary key. 
+There are four tables created out of the source data: three for demographic information including race, age and sex, and the other one for all health or related issues. The four tables are linked by an 'ID' column as the primary key. 
 
 Click the link here to view the SQL code for Data Tables: [Healthy Hearts SQL Tables](https://github.com/ahmadelbaba/HealthyHearts/blob/f71b0d4bb5576e16e1fdc2fc5cac6c86ea58c929/Helthy_Hearts%20-%20updated.sql)
 
@@ -36,17 +36,17 @@ Quickdbd was used to build an ERD. Click the link here to view the ERD: [Healthy
 
 ### Variables
 
-The dataset consists of 18 variables. The following table displays a short data dictionary for the chosen dataset, with the varaible names, description and response encoding.  
+The dataset consists of 18 variables. The following table displays a short data dictionary for the chosen dataset, with the variable names, description, and response encoding.  
 | Variable Name | Description | Type |
 | ------------- | ------------- | ------------- |
 | HeartDisease | Value indicating if Respondents ever reported having coronary heart disease (CHD) or myocardial infarction (MI) Yes (1) No (0) | Categorical |
 | BMI | Body Mass Index | Float |
 | Smoking | Value indicating if respondents smoked at least 100 cigarettes in their entire life  Yes (1) No (0) | Categorical |
-| AlcoholDrinking | Value indicating if the reponsder is heavy drinker (adult men having more than 14 rinks per week and adult women having more than 7 drinks per week) Yes (1) No (0) | Categorical |
+| AlcoholDrinking | Value indicating if the responsder is heavy drinker (adult men having more than 14 rinks per week and adult women having more than 7 drinks per week) Yes (1) No (0) | Categorical |
 | Stroke | Value indicating if respondent ever had a stroke? Yes (1) No (0) | Categorical |
 | PhysicalHealth | Value indicating the number of days that respondents experienced physical illness and/or injury(0-30 days) | Integer |
 MentalHealth | The number of days that mental health was not good (0-30 days) | Integer |
-| DiffWalking | Value indicating if respondets had serious difficulty walking or climbing stairs Yes (1) No (0) | Categorical |
+| DiffWalking | Value indicating if respondents had serious difficulty walking or climbing stairs Yes (1) No (0) | Categorical |
 | Sex | Male (1) Female (0) | Categorical |
 | AgeCategory | 14-level age category (5-year increments starting from age 18–24 to 80 or older) | Categorical |
 | Race | Imputed race/ethnic value | Categorical |
@@ -56,7 +56,7 @@ MentalHealth | The number of days that mental health was not good (0-30 days) | 
 | SleepTime | The number of hours that they sleep in a 24-hour period? 0 - 24 hours | Float |
 | Asthma | Do you have asthma? Yes (1) No (0) | Categorical |
 | KidneyDisease | Not including kidney stones, bladder infection or incontinence, were you ever told you had kidney disease? Yes (1) No (0) | Categorical |
-| SkinCancer | Have you had or do you have skin cancer? Yes (1) No (0) | Categorical |
+| SkinCancer | Have you had, or do you have skin cancer? Yes (1) No (0) | Categorical |
 
 ## **QUESTION TO BE ANSWERED** 
 
@@ -79,7 +79,7 @@ PostgresSQL database was used as the DataBase to manage the large dataset in its
 Python and Pandas were used on Jupyter Notebook to clean the data and perform exploratory analysis. 
 
 **Machine Learning:**
-SciKitLearn is the ML library used to create a classifier. Plotly and hvPlot was utilized to help visualize the outcomes. We also used Principal Component Analysis (PCA) for fetaure reduction. 
+SciKitLearn is the ML library used to create a classifier. Plotly and hvPlot was utilized to help visualize the outcomes. We also used Principal Component Analysis (PCA) for feature reduction. 
 
 **Dashboard:**
 Tableau was used to visualise and display the data and build an interactive dashboard. 
@@ -87,7 +87,7 @@ Tableau was used to visualise and display the data and build an interactive dash
 
 ## **DATABASE**
 
-PostgreSQL was used for the data and it is hosted on AWS. The database includes four tables; age, gendr, race and health_info. These were joined in PostgreSQL. 
+PostgreSQL was used for the data and it is hosted on AWS. The database includes four tables; age, gender, race and health_info. These were joined in PostgreSQL. 
 
 Click the link here to view the chosen data set summary, cleaning and initial exploratory analysis: [Healthy Hearts Data Summary](https://github.com/ahmadelbaba/HealthyHearts/blob/3a0a2f94c18134cf9dee42f743de41ecf0d15ad1/HealthyHeartsDataSummary.ipynb)
 
@@ -99,14 +99,14 @@ During data extraction, raw data is exported from source locations to a staging 
 
 **Transforming Data:** 
 
-The data is staged in PostgreSQL, where it undrwent data processing. Pandas and Matplotlib were used on jupyter notebook (Python) to consolidate the data for our analytical use case. This included re-encoding dichotomous responses to numeric binary values, cleaning out null values, summarizing based on raw data, and formatting the data into tables or data frames. Two tables were created out of the source data, categorized as demogrpahics and health tables. Moreover an 'ID' colmn was added to the table for primary key purposes to link the two separated tables. 
+The data is staged in PostgreSQL, where it underwent data processing. Pandas and Matplotlib were used on jupyter notebook (Python) to consolidate the data for our analytical use case. This included re-encoding dichotomous responses to numeric binary values, cleaning out null values, summarizing based on raw data, and formatting the data into tables or data frames. Two tables were created out of the source data, categorized as demographics and health tables. Moreover an 'ID' column was added to the table for primary key purposes to link the two separated tables. 
 
 **Loading Data:**
 
 The transformed data is stored in a database. We have chosen AWS to store our data. 
 
 ### DATABASE 
-As mentioned previously, PostgreSQL was used and the data is hosted on AWS. 
+As mentioned previously, PostgreSQL was used, and the data is hosted on AWS. 
 
 ## **DATA EXPLORATION: VISUALIZATIONS & DASHBOARD**
 
@@ -140,7 +140,7 @@ MentalHealth | 0 days | 64.22 % |
 | SkinCancer | No | 90.68 % |
 
 During the Data exploration phase, the following was concluded: 
-- Majority of the respondents are white and this is also the race that reported having the highest count for heart disease. This is a direct result of the makeup of the American populaiton which consists of majority white.  
+- Majority of the respondents are white and this is also the race that reported having the highest count for heart disease. This is a direct result of the makeup of the American population which consists of majority white.  
 - Overall there are more female respondents than males. Males, particulary white males, have most frequently reported to having heart disease.  
 - Heart disease increases with age. Older (60+ years) populaitons reported having more heart disease than younger (under 60 years).  
 - Number of smokers is higher than non-smokers, particularly in older populations with heart disease. 
@@ -158,7 +158,7 @@ Further visualizations were created on Tableau. Tableau was also used for hostin
 
 ### **DASHBOARD: [Tableau Link](https://public.tableau.com/app/profile/maha.shah7782/viz/HealthyHearts/HealthyHearts#1)**
 
-A Dashboard was created in Tableau. A storyboard for the dashboard has been presented in the google slides presentation. The Dashboard is segregated into four categories: Demographic information, Health Status, Other Diseases and Lifestyle Choices. The Dashbaord presents how these four categories impact Heart Disease. There are filters embedded in the Dashboard for ease of navigation to visually showcase and deterine the impact of the four categories on Heart Disease. Moreover, Tableau allows for interactive data visualization by "hover-over" information boxes which will further help provide clarification and support data analysis. Both Supervised and Unsupervised Machine Learning Results are also presented in the Dashboard. 
+A Dashboard was created in Tableau. A storyboard for the dashboard has been presented in the google slides presentation. The Dashboard is segregated into four categories: Demographic information, Health Status, Other Diseases and Lifestyle Choices. The Dashboard presents how these four categories impact Heart Disease. There are filters embedded in the Dashboard for ease of navigation to visually showcase and determine the impact of the four categories on Heart Disease. Moreover, Tableau allows for interactive data visualization by "hover-over" information boxes which will further help provide clarification and support data analysis. Both Supervised and Unsupervised Machine Learning Results are also presented in the Dashboard. 
 
 
 ## **MACHINE LEARNING ANALYSIS**
@@ -182,7 +182,7 @@ The model of Logistic Regression will be used for this test because of the natur
 #### **Results**
 
 When feature importance was calculated, it was able to uncover some stand out variables both negatively and positively. 
-Features that initially showed largerr levels of importance (before testing)
+Features that initially showed larger levels of importance (before testing)
   - Diabetes (Yes and No variables)
   - White in the Race column 
   - Age categories above 60 
@@ -212,7 +212,7 @@ Some things to note about this initial reading is that the distribution of large
   <img width="650" src="https://github.com/ahmadelbaba/HealthyHearts/blob/f220331fd27c68161f0e362207a3186b980b738a/images/AccuracyScoresData.png">
 </p>
 
-In the investigation of the contribution of race we needed to isolate each race and remove the biases from distribution as best as we can to determine if race as a whole is a good feature or not. To do this we are only testing each race column where the invidual is the race (Yes). This is because having the "No" in the specific race column as well as the "Yes" leaves for a very vague variable. This No variable could be any other race out of the 5 remaining, this weakens the test. In this test the accuracy rose for each individual race except for white. An explanation for this could be the fact that there were so many counts of white that it becomes harder in comparison to each race to truly predict. But in conclusion, it is fair to say that race is a good feature to have in the model and shows trends that would imply that it plays a part in predicting Heart Disease.
+In the investigation of the contribution of race we needed to isolate each race and remove the biases from distribution as best as we can to determine if race as a whole is a good feature or not. To do this we are only testing each race column where the individual is the race (Yes). This is because having the "No" in the specific race column as well as the "Yes" leaves for a very vague variable. This No variable could be any other race out of the 5 remaining, this weakens the test. In this test the accuracy rose for each individual race except for white. An explanation for this could be the fact that there were so many counts of white that it becomes harder in comparison to each race to truly predict. But in conclusion, it is fair to say that race is a good feature to have in the model and shows trends that would imply that it plays a part in predicting Heart Disease.
 
 <p align="center">
   <img width="650" src="https://github.com/ahmadelbaba/HealthyHearts/blob/f220331fd27c68161f0e362207a3186b980b738a/images/AccuracyScoresRace.png">
@@ -220,7 +220,7 @@ In the investigation of the contribution of race we needed to isolate each race 
 
 #### **Supervised Conclusion**
 
-The goal of the supervised model was to confidently be able to determine which features should be focused on when predicting Heart Disease. The model was able to seperate the strong and weak contributors uncovering the answer to the question. 
+The goal of the supervised model was to confidently be able to determine which features should be focused on when predicting Heart Disease. The model was able to separate the strong and weak contributors uncovering the answer to the question. 
 
 Features that should be used in general prediction of Heart Disease
   - Diabetes
@@ -237,7 +237,7 @@ Features that should be used in general prediction of Heart Disease
 
 This is the first step in Heart Disease prediction, it would need to be further examined using a different model to figure out the red flags in each of these features.
 
-Access Surpervised ML code here: [Healthy Hearts Supervised ML](https://github.com/ahmadelbaba/HealthyHearts/blob/fabdc6fab35930223679ae2af621a7e816f866ab/03_Supervised_ML.ipynb)
+Access Supervised ML code here: [Healthy Hearts Supervised ML](https://github.com/ahmadelbaba/HealthyHearts/blob/fabdc6fab35930223679ae2af621a7e816f866ab/03_Supervised_ML.ipynb)
 
 ### **Unsupervised Learning**
 
@@ -251,7 +251,7 @@ Following that, the team will generate and plot an Elbow Curve to determine how 
 
 Given that the number of features is high, the team will attempt feature-reduction and will use Principal Component Analysis (PCA). PCA is a statistical technique to speed up machine learning algorithms when the number of input features (or dimensions) is too high. PCA reduces the number of dimensions by transforming a large set of variables into a smaller one that contains most of the information in the original large set.
 
-Finally clusters will be generated again based on the outcome from PCA.
+Finally, clusters will be generated again based on the outcome from PCA.
 
 <p align="center">
   <img width="650" src="https://github.com/ahmadelbaba/HealthyHearts/blob/f220331fd27c68161f0e362207a3186b980b738a/images/newplot.png">
@@ -261,7 +261,7 @@ Finally clusters will be generated again based on the outcome from PCA.
 
 #### **Code Summary:**
 
-Access Unsurpervised ML code here: [Healthy Hearts Unsupervised ML](https://github.com/ahmadelbaba/HealthyHearts/blob/fabdc6fab35930223679ae2af621a7e816f866ab/02_Unsupervised_ML.ipynb)
+Access Unsupervised ML code here: [Healthy Hearts Unsupervised ML](https://github.com/ahmadelbaba/HealthyHearts/blob/fabdc6fab35930223679ae2af621a7e816f866ab/02_Unsupervised_ML.ipynb)
 
 1.  Preprocessing:
     - Re-encoded "Yes" and "No" with 1's and 0's
@@ -274,7 +274,7 @@ Access Unsurpervised ML code here: [Healthy Hearts Unsupervised ML](https://gith
 2. Data Reduction:
     - Used a PCA model to reduce dimensions to 3 principal components
 
-3. Determing Clusters:
+3. Determining Clusters:
     - Used K-means model to fit data and predict clusters
     - Used an elbow curve and concluded that four clusters is the optimal number 
     - Plotted the clusters in a 3D graph
