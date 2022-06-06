@@ -95,7 +95,13 @@ Click the link here to view the chosen data set summary, cleaning and initial ex
 
 **Extracting Data:** 
 
-During data extraction, raw data is exported from source locations to a staging area. The current dataset is extracted from Kaggle, an open source, web-based data science environment.
+During data extraction, raw data is exported from source locations to a staging area. The current dataset is extracted from Kaggle, an open source, web-based data science environment. 
+Following this process, the data was cleaned as following: 
+
+- Removal of the observations with null values in any attribute
+- Removal of the features with highest null value observations
+- Removal of duplicated rows
+- Ensuring that data types are in correct form
 
 **Transforming Data:** 
 
