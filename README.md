@@ -241,15 +241,15 @@ Access Supervised ML code here: [Healthy Hearts Supervised ML](https://github.co
 
 ### **Unsupervised Learning**
 
-While Supervised Machine Learning can help us predict outcomes based on the different factors in our data set, Unsupervised learning will help us uncover patterns in our data and determine clusters. By employing Unsupervised learning, we will attempt to find out whether certain clusters of individuals react to risk factors differently. This in turn can be used to further our Supervised learning model accuracy and ultimately taylor our advice and improve the health outcomes of our clustered population. 
+While Supervised Machine Learning can help us predict outcomes based on the different factors in our data set, unsupervised learning will help us uncover patterns in our data and determine clusters. By employing unsupervised learning, we will attempt to find out whether certain clusters of individuals react to risk factors differently. 
 
 The team will use Scikit-learn library as well as Plotly and hvPlot to help visualize the outcomes. Pandas will be used to pre-process the data.  
 
-For our Unsupervised learning model will we start by importing data from our PostgresSQL database. The data will be verified for any null-values and duplicates. Furthermore we will ensure that all data is numeric. Data will be scaled where needed.
+For our unsupervised learning model will we start by importing data from our PostgresSQL database. The data will be verified for any null-values and duplicates. Furthermore we will ensure that all data is numeric. Data will be scaled where needed.
 
 Following that, the team will generate and plot an Elbow Curve to determine how many K clusters are needed. Once the number of clusters is known, the team will employ a K-means model to plot the clusters. 
 
-Given that the number of features is high, the team will attempt feature-reduction and will use Principal Component Analysis (PCA). PCA is a statistical technique to speed up machine learning algorithms when the number of input features (or dimensions) is too high. PCA reduces the number of dimensions by transforming a large set of variables into a smaller one that contains most of the information in the original large set.
+Given that the number of features is high, the team will attempt feature-reduction and will use Principal Component Analysis (PCA). PCA is a statistical technique to speed up machine learning algorithms when the number of input features (or dimensions) is too high. PCA reduces the number of dimensions by transforming a large set of variables into a smaller one that contains most of the information in the original large set. In addition to leveraging PCA, the team used the feature importance results from the supervised model and dropped certain factors that ranked low in importance. by doing that, we reduced noisein teh data and were able to go from 4 clusters initiailly to 3 clusters.
 
 Finally, clusters will be generated again based on the outcome from PCA.
 
@@ -273,6 +273,7 @@ Access Unsupervised ML code here: [Healthy Hearts Unsupervised ML](https://githu
 
 2. Data Reduction:
     - Used a PCA model to reduce dimensions to 3 principal components
+    - Used thefeature importance outcomes from the supervised machine learning model to futher reduce factors to only the ones that have been determined significant 
 
 3. Determining Clusters:
     - Used K-means model to fit data and predict clusters
