@@ -289,22 +289,23 @@ Access Unsupervised ML code here: [Healthy Hearts Unsupervised ML](https://githu
 
 After determining the 3 clusters/classes we plotted distribution curves for each feature for each of the clutsers. We grouped them by Demographic, Health, Disease and Lifestyle choice factors. 
 
-**Demographics**
+<h4 align="center">Demographics</h4>
 <p align="center">
   <img width="650" src="https://github.com/ahmadelbaba/HealthyHearts/blob/cae6733713340f9acd1059298431073bf9c77978/images/Clusters%20Demogrpahics.png">
 </p>
 
-**Health Status**
+<h4 align="center">Health Status</h4>
 <p align="center">
   <img width="650" src="https://github.com/ahmadelbaba/HealthyHearts/blob/cae6733713340f9acd1059298431073bf9c77978/images/Clusters%20Health%20Status%20.png">
 </p>
 
-**Other Diseases**
+<h4 align="center">Other Diseases</h4>
 <p align="center">
   <img width="650" src="https://github.com/ahmadelbaba/HealthyHearts/blob/cae6733713340f9acd1059298431073bf9c77978/images/Clusters%20Other%20Diseases.png">
 </p>
 
-**Lifestyle Choices**
+
+<h4 align="center">Lifestyle Choices</h4>
 <p align="center">
   <img width="650" src="https://github.com/ahmadelbaba/HealthyHearts/blob/cae6733713340f9acd1059298431073bf9c77978/images/Clusters%20Lifestyle%20Choices.png">
 </p>
