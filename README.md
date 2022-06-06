@@ -285,6 +285,41 @@ Access Unsupervised ML code here: [Healthy Hearts Unsupervised ML](https://githu
     - Saved clusters in four different Data Frames
     - Exported resulting data and classes into a new CSV (ClusteredData.csv)
 
+#### Unsupervised ML results
+
+After determining the 3 clusters/classes we plotted distribution curves for each feature for each of the clutsers. We grouped them by Demographic, Health, Disease and Lifestyle choice factors. 
+
+**Demographics**
+![Demo](/images/UnsupML_age_race.PNG)
+
+**Health Status**
+![Health](/images/UnsupML_Health.PNG)
+
+**Other Diseases*
+![Diseases](/images/UnsupML_diseases.PNG)
+
+**Lifestyle Choices**
+![Lifestyle](/images/UnsupML_lifestyle.PNG)
+
+#### Unsupervised ML conclusions
+
+Based on the distribution charts we were able to generate, we were able to conclude the below about each of the clusters:
+
+Group 1: 
+  - Demographically: More Male, less Native Americans, more Asians
+  - Health: Better General Health,  better Physical Health 
+  - Diseases: Less Skin Cancer
+
+Group 2: 
+  - Demographically: Less Asians, More Hispanic, more 18-24
+  - Diseases: More Skin Cancer, less Stroke
+
+Group 3: 
+  - Demographically: More Native Americans, more in the age range 30-49
+  - Health: Poorer General Health, less physically healthy, have more difficulty walking
+  - Diseases: More Borderline Diabetic and Diabetic, More stroke 
+  
+
 ## CONCLUSION
 
 This analysis concludes that individual demographic information and medical history, particularly other diseases, can predispose individuals to getting heart disease. 
