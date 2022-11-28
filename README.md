@@ -255,7 +255,7 @@ For our unsupervised learning model will we start by importing data from our Pos
 
 Following that, the team will generate and plot an Elbow Curve to determine how many K clusters are needed. Once the number of clusters is known, the team will employ a K-means model to plot the clusters. 
 
-Given that the number of features is high, the team will attempt feature-reduction and will use Principal Component Analysis (PCA). PCA is a statistical technique to speed up machine learning algorithms when the number of input features (or dimensions) is too high. PCA reduces the number of dimensions by transforming a large set of variables into a smaller one that contains most of the information in the original large set. In addition to leveraging PCA, the team used the feature importance results from the supervised model and dropped certain factors that ranked low in importance. by doing that, we reduced noisein teh data and were able to go from 4 clusters initiailly to 3 clusters.
+Given that the number of features is high, the team will attempt feature-reduction and will use Principal Component Analysis (PCA). PCA is a statistical technique to speed up machine learning algorithms when the number of input features (or dimensions) is too high. PCA reduces the number of dimensions by transforming a large set of variables into a smaller one that contains most of the information in the original large set. In addition to leveraging PCA, the team used the feature importance results from the supervised model and dropped certain factors that ranked low in importance. By doing so, we reduced noise in the data and were able to go from 4 clusters initiailly to 3 clusters.
 
 Finally, clusters will be generated again based on the outcome from PCA.
 
@@ -263,7 +263,7 @@ Finally, clusters will be generated again based on the outcome from PCA.
   <img width="650" src="https://github.com/ahmadelbaba/HealthyHearts/blob/f220331fd27c68161f0e362207a3186b980b738a/images/newplot.png">
 </p>
 
-(The fully interactable version can be accessed here: [3D Scatter Plot](https://ahmadelbaba.github.io/3d-scatter/3d_scatter.html))
+(The fully interactive version can be accessed here: [3D Scatter Plot](https://ahmadelbaba.github.io/3d-scatter/3d_scatter.html))
 
 #### **Code Summary:**
 
@@ -279,11 +279,11 @@ Access Unsupervised ML code here: [Healthy Hearts Unsupervised ML](https://githu
 
 2. Data Reduction:
     - Used a PCA model to reduce dimensions to 3 principal components
-    - Used thefeature importance outcomes from the supervised machine learning model to futher reduce factors to only the ones that have been determined significant 
+    - Used the feature importance outcomes from the supervised machine learning model to futher reduce factors to only the ones that have been determined significant 
 
 3. Determining Clusters:
     - Used K-means model to fit data and predict clusters
-    - Used an elbow curve and concluded that four clusters is the optimal number 
+    - Used an elbow curve and concluded that four clusters is the optimal number initially then reduced to 3 after reducing certain factors
     - Plotted the clusters in a 3D graph
     - Finally generated a silhouette score and our model score 0.49 on a scale of -1 to +1
     
